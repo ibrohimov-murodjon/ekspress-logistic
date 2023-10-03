@@ -4,7 +4,7 @@
 
 @layer {
   .myContainer {
-    @apply mx-auto max-w-[1246px] px-[20px];
+    @apply mx-auto w-full max-w-[1246px] px-[20px];
   }
 }
 
@@ -114,6 +114,13 @@ body {
   animation: arrow 2s infinite;
   -webkit-animation: arrow 2s infinite;
 }
+
+.react-multi-carousel-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 @keyframes arrow {
   0% {

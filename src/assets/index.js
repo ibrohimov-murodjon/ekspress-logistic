@@ -6,4 +6,5 @@ export {default as instaLogo} from "./instagram_logo.svg";
 export { default as faceLogo } from "./facebook_logo.svg";
 export { default as tgLogo } from "./tg_logo.svg";
 export { default as phoneLogo } from "./call_logo.svg";
+export { default as arrowLeft } from "./arrow-left.png";
 export { default as Director } from "./director-photo.png";

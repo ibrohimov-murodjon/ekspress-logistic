@@ -1,5 +1,7 @@
+
 import { Slide } from "react-awesome-reveal";
 import { instaLogo, faceLogo } from "../assets";
+import {useWindowDimensions} from '../components'
 
 const data = [
   {
@@ -21,8 +23,10 @@ const data = [
 ];
 
 function Navbar() {
+   const { height, width } = useWindowDimensions();
+   console.log(height)
   return (
-    <nav className="sticky z-[999] bg-white bg-opacity-30 backdrop-filter backdrop-blur-md">
+    <nav className="sticky z-[999] top-0 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md">
       <div className="myContainer">
         <div className="flex items-center justify-between pt-[30px] pb-[26px] mobileLg:flex-col">
           <Slide direction="down" duration={2500}>
@@ -42,10 +46,10 @@ function Navbar() {
           </Slide>
           <Slide direction="down" duration={2500}>
             <div className="flex items-center gap-x-6 mobileLg:mt-4">
-              <a href="/">
+              <a href="https://www.instagram.com/" target={"_blank"}>
                 <img src={instaLogo} alt="instagram logo" />
               </a>
-              <a href="/">
+              <a href="https://www.facebook.com/" target={"_blank"}>
                 <img src={faceLogo} alt="instagram logo" />
               </a>
             </div>
