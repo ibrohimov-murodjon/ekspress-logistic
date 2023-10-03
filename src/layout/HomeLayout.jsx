@@ -1,9 +1,14 @@
 import { Outlet } from "react-router-dom";
+import { Header, Navbar } from "../components";
 
 function HomeLayout() {
   return (
     <>
-      <Outlet />
+      <Header />
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }

@@ -1,7 +1,59 @@
-import React from "react";
+import { Slide } from "react-awesome-reveal";
+import { instaLogo, faceLogo } from "../assets";
+
+const data = [
+  {
+    name: "Home",
+    to: "#",
+  },
+  {
+    name: "About",
+    to: "#about",
+  },
+  {
+    name: "Services",
+    to: "#services",
+  },
+  {
+    name: "Contact",
+    to: "#contact",
+  },
+];
 
 function Navbar() {
-  return <div>Navbar</div>;
+  return (
+    <nav className="sticky z-[999] bg-white bg-opacity-30 backdrop-filter backdrop-blur-md">
+      <div className="myContainer">
+        <div className="flex items-center justify-between pt-[30px] pb-[26px] mobileLg:flex-col">
+          <Slide direction="down" duration={2500}>
+            <div className="flex space-x-4  items-center">
+              {data.map((link) => (
+                <>
+                  <a
+                    href={link.to}
+                    className="nav relative text-white font-krub font-bold"
+                  >
+                    {link.name}
+                  </a>
+                  <div className="w-[1px] h-[19px] [&:not(:last-child)]:bg-darkGray"></div>
+                </>
+              ))}
+            </div>
+          </Slide>
+          <Slide direction="down" duration={2500}>
+            <div className="flex items-center gap-x-6 mobileLg:mt-4">
+              <a href="/">
+                <img src={instaLogo} alt="instagram logo" />
+              </a>
+              <a href="/">
+                <img src={faceLogo} alt="instagram logo" />
+              </a>
+            </div>
+          </Slide>
+        </div>
+      </div>
+    </nav>
+  );
 }
 
 export default Navbar;
