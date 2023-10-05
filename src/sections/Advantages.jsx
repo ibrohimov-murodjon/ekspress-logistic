@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Slide, Zoom } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 import { SubText } from "../components";
 import arrowLeft from "../assets/arrow-left.png";
 import { Card } from "flowbite-react";
@@ -132,8 +132,11 @@ function Advantages() {
             slidesToSlide={1}
             swipeable
           >
-            {data.map((item) => (
-              <Card className="max-w-sm mr-2 border-amber-300 bg-[#091242] h-[300px] mt-[65px] mb-8 hover:shadow-md hover:shadow-amber-300 tabletLg:max-w-xs tabletMd:max-w-lg">
+            {data.map((item, index) => (
+              <Card
+                key={index}
+                className="max-w-sm mr-2 border-amber-300 bg-[#091242] h-[300px] mt-[65px] mb-8 hover:shadow-md hover:shadow-amber-300 tabletLg:max-w-xs tabletMd:max-w-lg"
+              >
                 <div className="flex text-xl gap-6 items-center  text-white">
                   <span className="font-rubik">0{item.id}</span>
                   <div className="w-[2px] h-[60px] bg-amber-300 rotate-[15deg]"></div>

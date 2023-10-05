@@ -1,4 +1,3 @@
-import { Tabs } from "flowbite-react";
 import location from "../assets/location.png";
 
 function Location() {
