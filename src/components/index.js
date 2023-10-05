@@ -4,4 +4,3 @@ export { default as Footer } from "./Footer";
 export { default as Navbar } from "./Navbar";
 export { default as Card } from "./Card";
 export { default as SubText } from "./SubText";
-export { default as useWindowDimensions } from "./useWindowDimensions";

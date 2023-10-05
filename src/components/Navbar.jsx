@@ -1,7 +1,5 @@
-
 import { Slide } from "react-awesome-reveal";
 import { instaLogo, faceLogo } from "../assets";
-import {useWindowDimensions} from '../components'
 
 const data = [
   {
@@ -13,8 +11,12 @@ const data = [
     to: "#about",
   },
   {
-    name: "Services",
-    to: "#services",
+    name: "Why Us?",
+    to: "#advantages",
+  },
+  {
+    name: "Our Team",
+    to: "#team",
   },
   {
     name: "Contact",
@@ -23,8 +25,6 @@ const data = [
 ];
 
 function Navbar() {
-   const { height, width } = useWindowDimensions();
-   console.log(height)
   return (
     <nav className="sticky z-[999] top-0 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md">
       <div className="myContainer">
