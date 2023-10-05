@@ -1,4 +1,4 @@
-import { Hero,About, Advantages } from "../sections";
+import { Hero,About, Advantages, Team, Location } from "../sections";
 
 function Home() {
   return (
@@ -6,6 +6,8 @@ function Home() {
       <Hero />
       <About />
       <Advantages />
+      <Team />
+      <Location />
     </div>
   );
 }

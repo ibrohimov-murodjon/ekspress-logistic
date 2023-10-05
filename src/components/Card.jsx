@@ -1,9 +1,11 @@
 import { tgLogo, phoneLogo } from "../assets";
 
-function Card({ img, name, role, bgDark, tglink, number }) {
+function Card({ img, name, role, bgDark, tglink, number, borderNone }) {
   return (
     <div
-      className="relative max-w-sm  border border-gray-200 rounded-lg shadow"
+      className={`relative max-w-sm  border border-gray-200 rounded-lg shadow ${
+        borderNone ? "border-none" : ""
+      }`}
       style={{ background: `${bgDark ? "#1C1F35" : "#fff"}` }}
     >
       <img

@@ -1,16 +1,15 @@
 import { Slide, Zoom } from "react-awesome-reveal";
-import { SubText } from "../components";
+import { SubText, Card } from "../components";
 import { Director } from "../assets";
-import { Card } from "../components";
 
 function About() {
   return (
     <div
       id="about"
-      className="flex flex-col items-center pt-[41px] pb-[77px] bg-[#111C55]"
+      className="flex flex-col items-center pt-[120px] pb-[77px] bg-[#111C55]"
     >
       <Slide direction="down" duration={2000}>
-        <SubText title="About Us" bgclr="#787D95" />
+        <SubText title="About Us" bgclr="#F3F3F3" />
         <h1 className="text-4xl text-white font-rubik font-bold">About Us</h1>
       </Slide>
       <div className="w-[70%] h-[2px] bg-[#D6D6D6] mt-[43px]"></div>

@@ -8,3 +8,7 @@ export { default as tgLogo } from "./tg_logo.svg";
 export { default as phoneLogo } from "./call_logo.svg";
 export { default as arrowLeft } from "./arrow-left.png";
 export { default as Director } from "./director-photo.png";
+export { default as TeamPhotoOne } from "./team_img_1.png";
+export { default as TeamPhotoTwo } from "./team_img_2.png";
+export { default as TeamPhotoThree } from "./team_img_3.png";
+export { default as location } from "./location.png";

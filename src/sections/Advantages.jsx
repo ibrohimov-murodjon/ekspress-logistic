@@ -67,7 +67,7 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
 
 function Advantages() {
   return (
-    <div className="pt-[150px] pb-[78px] bg-[#091242]">
+    <div className="pt-[120px] pb-[78px] bg-[#091242]" id="advantages">
       <div className="myContainer">
         <Slide direction="left" duration={1500}>
           <SubText bgclr="#F3F3F3" title="Why us?" />
@@ -76,76 +76,76 @@ function Advantages() {
           </h1>
         </Slide>
         <div className="relative mt-6 ">
-          <Slide direction="up" duration={2000}>
-            <Carousel
-              additionalTransfrom={0}
-              arrows={false}
-              autoPlaySpeed={3000}
-              centerMode={false}
-              className=""
-              containerClass="container-padding-bottom"
-              customButtonGroup={<ButtonGroup />}
-              dotListClass=""
-              draggable
-              focusOnSelect={false}
-              infinite={false}
-              itemClass=""
-              keyBoardControl
-              minimumTouchDrag={80}
-              pauseOnHover
-              renderArrowsWhenDisabled={false}
-              renderButtonGroupOutside
-              renderDotsOutside={false}
-              responsive={{
-                desktop: {
-                  breakpoint: {
-                    max: 3000,
-                    min: 1024,
-                  },
-                  items: 3,
-                  partialVisibilityGutter: 40,
+          {/* <Slide direction="up" duration={2000}> */}
+          <Carousel
+            additionalTransfrom={0}
+            arrows={false}
+            autoPlaySpeed={3000}
+            centerMode={false}
+            className=""
+            containerClass="container-padding-bottom"
+            customButtonGroup={<ButtonGroup />}
+            dotListClass=""
+            draggable
+            focusOnSelect={false}
+            infinite={false}
+            itemClass=""
+            keyBoardControl
+            minimumTouchDrag={80}
+            pauseOnHover
+            renderArrowsWhenDisabled={false}
+            renderButtonGroupOutside
+            renderDotsOutside={false}
+            responsive={{
+              desktop: {
+                breakpoint: {
+                  max: 3000,
+                  min: 1024,
                 },
+                items: 3,
+                partialVisibilityGutter: 40,
+              },
 
-                tablet: {
-                  breakpoint: {
-                    max: 1024,
-                    min: 464,
-                  },
-                  items: 2,
-                  partialVisibilityGutter: 30,
+              tablet: {
+                breakpoint: {
+                  max: 1024,
+                  min: 464,
                 },
-                mobile: {
-                  breakpoint: {
-                    max: 700,
-                    min: 0,
-                  },
-                  items: 1,
-                  partialVisibilityGutter: 30,
+                items: 2,
+                partialVisibilityGutter: 30,
+              },
+              mobile: {
+                breakpoint: {
+                  max: 700,
+                  min: 0,
                 },
-              }}
-              rewind={false}
-              rewindWithAnimation={false}
-              rtl={false}
-              shouldResetAutoplay
-              showDots={false}
-              sliderClass=""
-              slidesToSlide={1}
-              swipeable
-            >
-              {data.map((item) => (
-                <Card className="max-w-sm mr-2 border-amber-300 bg-[#091242] h-[300px] mt-[65px] mb-8 hover:shadow-md hover:shadow-amber-300 tabletLg:max-w-xs tabletMd:max-w-lg">
-                  <div className="flex text-xl gap-6 items-center  text-white">
-                    <span className="font-rubik">0{item.id}</span>
-                    <div className="w-[2px] h-[60px] bg-amber-300 rotate-[15deg]"></div>
-                    <h5 className="text-2xl font-rubik tracking-wider text-white">
-                      {item.title}
-                    </h5>
-                  </div>
-                  <p className="font-normal text-white">{item.desc}</p>
-                </Card>
-              ))}
-            </Carousel>
-          </Slide>
+                items: 1,
+                partialVisibilityGutter: 30,
+              },
+            }}
+            rewind={false}
+            rewindWithAnimation={false}
+            rtl={false}
+            shouldResetAutoplay
+            showDots={false}
+            sliderClass=""
+            slidesToSlide={1}
+            swipeable
+          >
+            {data.map((item) => (
+              <Card className="max-w-sm mr-2 border-amber-300 bg-[#091242] h-[300px] mt-[65px] mb-8 hover:shadow-md hover:shadow-amber-300 tabletLg:max-w-xs tabletMd:max-w-lg">
+                <div className="flex text-xl gap-6 items-center  text-white">
+                  <span className="font-rubik">0{item.id}</span>
+                  <div className="w-[2px] h-[60px] bg-amber-300 rotate-[15deg]"></div>
+                  <h5 className="text-2xl font-rubik tracking-wider text-white">
+                    {item.title}
+                  </h5>
+                </div>
+                <p className="font-normal text-white">{item.desc}</p>
+              </Card>
+            ))}
+          </Carousel>
+          {/* </Slide> */}
         </div>
       </div>
     </div>
