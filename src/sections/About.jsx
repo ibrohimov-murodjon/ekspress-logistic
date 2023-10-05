@@ -1,6 +1,6 @@
 import { Slide, Zoom } from "react-awesome-reveal";
 import { SubText, Card } from "../components";
-import { Director } from "../assets";
+import Director from "../assets/director-photo.png";
 
 function About() {
   return (

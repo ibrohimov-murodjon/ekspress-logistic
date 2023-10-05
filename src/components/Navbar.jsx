@@ -1,5 +1,6 @@
 import { Slide } from "react-awesome-reveal";
-import { instaLogo, faceLogo } from "../assets";
+import instaLogo from "../assets/instagram_logo.svg";
+import faceLogo from "../assets/facebook_logo.svg";
 
 const data = [
   {

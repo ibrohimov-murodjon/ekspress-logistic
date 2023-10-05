@@ -1,5 +1,5 @@
 import { Tabs } from "flowbite-react";
-import { location } from "../assets";
+import location from "../assets/location.png";
 
 function Location() {
   return (
@@ -54,9 +54,9 @@ function Location() {
               width="100%"
               height="450"
               style={{ border: 0 }}
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
           <div
@@ -70,9 +70,9 @@ function Location() {
               width="100%"
               height="450"
               style={{ border: 0 }}
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>

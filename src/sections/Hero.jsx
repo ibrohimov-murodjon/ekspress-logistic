@@ -17,8 +17,8 @@ function Hero() {
         className="absolute z-0 w-auto 
             min-w-full min-h-full max-w-none "
       ></video>
-        <div className="z-[99] myContainer">
-      <Slide direction="left" duration={3500}>
+      <div className="z-[99] myContainer">
+        <Slide direction="left" duration={3500}>
           <SubText title="Trans Ekspress Logistics" bgclr="#043265" white />
           <h1 className="text-white text-5xl max-w-2xl font-bold font-rubik">
             Logistics tailored to meet your business needs
@@ -28,8 +28,8 @@ function Hero() {
             destiantion safely and quickly
           </p>
           <Button title="Premium Class" />
-      </Slide>
-        </div>
+        </Slide>
+      </div>
       <a href="#about">
         <svg className="arrows z-[99]">
           <path className="a1" d="M0 0 L30 32 L60 0"></path>

@@ -1,6 +1,8 @@
 import { Slide } from "react-awesome-reveal";
 import { Card, SubText } from "../components";
-import { TeamPhotoOne, TeamPhotoTwo, TeamPhotoThree } from "../assets";
+import TeamPhotoOne from "../assets/team_img_1.png";
+import TeamPhotoTwo from "../assets/team_img_2.png";
+import TeamPhotoThree from "../assets/team_img_3.png";
 
 const data = [
   {

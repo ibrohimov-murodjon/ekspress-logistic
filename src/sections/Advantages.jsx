@@ -1,8 +1,8 @@
-import { Slide, Zoom } from "react-awesome-reveal";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Slide, Zoom } from "react-awesome-reveal";
 import { SubText } from "../components";
-import { arrowLeft } from "../assets";
+import arrowLeft from "../assets/arrow-left.png";
 import { Card } from "flowbite-react";
 
 const data = [
