@@ -1,9 +1,7 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomeLayout from "./layout/HomeLayout";
 import { Home, Premium, Error } from "./pages";
+import { ErrorElement } from "./components";
 
 export default function App() {
   const routes = createBrowserRouter([
@@ -15,11 +13,12 @@ export default function App() {
           index: true,
           element: <Home />,
           // loader: landingLoader,
-          errorElement: <Error />,
+          errorElement: <ErrorElement />,
         },
         {
           path: "/premium",
           element: <Premium />,
+          errorElement: <Error />,
         },
       ],
     },
@@ -30,4 +29,3 @@ export default function App() {
     </>
   );
 }
-

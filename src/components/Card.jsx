@@ -1,4 +1,5 @@
-import { tgLogo, phoneLogo } from "../assets";
+import tgLogo from "../assets/tg_logo.svg";
+import phoneLogo from "../assets/call_logo.svg";
 
 function Card({ img, name, role, bgDark, tglink, number, borderNone }) {
   return (

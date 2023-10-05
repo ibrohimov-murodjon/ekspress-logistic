@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Slide } from "react-awesome-reveal";
-import { logo, callLogo, emailLogo, timeLogo } from "../assets";
+import logo from "../assets/logo.svg";
+import callLogo from "../assets/call-logo.svg";
+import emailLogo from "../assets/email.png";
+import timeLogo from "../assets/time-logo.svg";
 
 function Header() {
   return (
