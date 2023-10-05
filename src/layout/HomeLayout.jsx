@@ -1,10 +1,14 @@
-
+import { Outlet } from "react-router-dom";
 import { Header, Navbar } from "../components";
 
 function HomeLayout() {
   return (
     <>
-      <h1>hello</h1>
+      <Header />
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }

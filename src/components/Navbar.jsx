@@ -33,7 +33,7 @@ function Navbar() {
           <Slide direction="down" duration={2500}>
             <div className="flex space-x-4  items-center">
               {data.map((link, index) => (
-                <div key={index}>
+                <>
                   <a
                     href={link.to}
                     className="nav relative text-white font-krub font-bold"
@@ -41,7 +41,7 @@ function Navbar() {
                     {link.name}
                   </a>
                   <div className="w-[1px] h-[19px] [&:not(:last-child)]:bg-darkGray"></div>
-                </div>
+                </>
               ))}
             </div>
           </Slide>

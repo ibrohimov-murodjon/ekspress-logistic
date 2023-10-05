@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 function Button({ title }) {
   return (
-    <a
-      href="#"
+    <Link
+      to="/premium"
       className="btn-grad w-[250px] font-krub tracking-wide font-medium"
     >
       {title}
-    </a>
+    </Link>
   );
 }
 

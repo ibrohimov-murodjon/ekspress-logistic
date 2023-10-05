@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Slide } from "react-awesome-reveal";
 import logo from "../assets/logo.svg";
 import callLogo from "../assets/call-logo.svg";
@@ -10,13 +11,13 @@ function Header() {
     <div className="bg-[#091242] pt-11 pb-7 max-desktop:pt-6">
       <div className="myContainer flex justify-between flex-wrap items-center desktop:justify-center">
         <Slide direction="left" duration={3000}>
-          <a href="#" className="pr-4">
+          <Link to="/" className="pr-4">
             <img
               src={logo}
               alt="logo"
               className="w-[260px] h-[80px] inline-block"
             />
-          </a>
+          </Link>
         </Slide>
         <Slide direction="right" duration={3000}>
           <div className="flex items-center justify-center flex-wrap gap-[39px] desktop:pt-6">
