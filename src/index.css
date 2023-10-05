@@ -115,12 +115,11 @@ body {
   -webkit-animation: arrow 2s infinite;
 }
 
-.react-multi-carousel-item{
+.react-multi-carousel-item {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 @keyframes arrow {
   0% {

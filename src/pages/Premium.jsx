@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Premium() {
-  return (
-    <div>Premium</div>
-  )
+  return <div>Premium</div>;
 }
 
-export default Premium
+export default Premium;

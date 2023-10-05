@@ -1,4 +1,4 @@
-import { Hero,About, Advantages, Team, Location } from "../sections";
+import { Hero, About, Advantages, Team, Location } from "../sections";
 
 function Home() {
   return (

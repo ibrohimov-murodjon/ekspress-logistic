@@ -1,11 +1,14 @@
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-function Button({title}) {
+function Button({ title }) {
   return (
-    <Link to="premium" className="btn-grad w-[250px] font-krub tracking-wide font-medium">
+    <Link
+      to="/premium"
+      className="btn-grad w-[250px] font-krub tracking-wide font-medium"
+    >
       {title}
     </Link>
   );
 }
 
-export default Button
+export default Button;
