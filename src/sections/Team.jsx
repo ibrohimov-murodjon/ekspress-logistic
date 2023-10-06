@@ -37,7 +37,7 @@ function Team() {
       id="team"
       className="flex flex-col items-center pt-[120px] pb-[77px] bg-[#111C55]"
     >
-      <Slide direction="down" duration={2000}>
+      <Slide direction="down">
         <SubText title="Our Team" bgclr="#F3F3F3" />
         <h1 className="text-4xl text-white font-rubik font-bold">Our Team</h1>
       </Slide>
