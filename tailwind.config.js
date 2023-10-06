@@ -19,9 +19,11 @@ module.exports = {
       screens: {
         desktop: { max: "1161px" },
         desktopSm: { max: "910px" },
-        tabletLg: { max: "835px" },
-        tabletMd: { max: "700px" },
+        tabletMax:{max: "794px"},
         mobileLg: { max: "545px" },
+        mobileMd: { max: "400px" },
+        mobileSm: { max: "365px" },
+        
       },
       colors: {
         bgVideo: "rgba(0,0,0,.6)",
