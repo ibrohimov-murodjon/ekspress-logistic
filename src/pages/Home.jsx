@@ -1,4 +1,5 @@
-import { Hero, About, Advantages, Team, Location } from "../sections";
+import { CountriesSlider } from "../components";
+import { Hero, About, Advantages, Team, Location, Certificates, Contact } from "../sections";
 
 function Home() {
   return (
@@ -6,8 +7,11 @@ function Home() {
       <Hero />
       <About />
       <Advantages />
+      <Certificates/>
+      <CountriesSlider/>
       <Team />
       <Location />
+      <Contact/>
     </div>
   );
 }
