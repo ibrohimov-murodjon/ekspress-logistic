@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Slide } from "react-awesome-reveal";
+import { Slide, Fade } from "react-awesome-reveal";
 //flovbite
 import { Modal } from "flowbite-react";
 //component
@@ -70,77 +70,79 @@ function Certificates() {
             Our Certificates
           </h1>
         </Slide>
-        <Carousel
-          additionalTransfrom={0}
-          arrows
-          autoPlay
-          autoPlaySpeed={2000}
-          centerMode={false}
-          containerClass="container-with-dots"
-          dotListClass=""
-          draggable
-          focusOnSelect={false}
-          infinite
-          itemClass=""
-          keyBoardControl
-          minimumTouchDrag={80}
-          pauseOnHover
-          renderArrowsWhenDisabled={false}
-          renderButtonGroupOutside={false}
-          renderDotsOutside={false}
-          rewind={false}
-          rewindWithAnimation={false}
-          rtl={false}
-          shouldResetAutoplay
-          showDots={false}
-          sliderClass=""
-          slidesToSlide={1}
-          swipeable
-          responsive={responsive}
-          className="pt-[50px] w-full "
-        >
-          {certificatedData.map((item) => {
-            return (
-              <div
-                className="bg-slate-200 h-[441px] w-full max-w-[337px] group "
-                key={item.id}
-              >
-                <div className="absolute z-[99] top-[50%] left-[50%] translate-x-[-70%] translate-y-[-50%]">
-                  <div
-                    className="bg-inherit hover:bg-inherit  hidden group-hover:block cursor-pointer"
-                    onClick={() => {
-                      props.setOpenModal("dismissible");
-                      setModalImg({
-                        id: item.id,
-                        img: item.img,
-                      });
-                    }}
-                  >
-                    <img src={searchLogo} />
+        <Fade duration={3000}>
+          <Carousel
+            additionalTransfrom={0}
+            arrows
+            autoPlay
+            autoPlaySpeed={2000}
+            centerMode={false}
+            containerClass="container-with-dots"
+            dotListClass=""
+            draggable
+            focusOnSelect={false}
+            infinite
+            itemClass=""
+            keyBoardControl
+            minimumTouchDrag={80}
+            pauseOnHover
+            renderArrowsWhenDisabled={false}
+            renderButtonGroupOutside={false}
+            renderDotsOutside={false}
+            rewind={false}
+            rewindWithAnimation={false}
+            rtl={false}
+            shouldResetAutoplay
+            showDots={false}
+            sliderClass=""
+            slidesToSlide={1}
+            swipeable
+            responsive={responsive}
+            className="pt-[50px] w-full "
+          >
+            {certificatedData.map((item) => {
+              return (
+                <div
+                  className="bg-slate-200 h-[441px] w-full max-w-[337px] group "
+                  key={item.id}
+                >
+                  <div className="absolute z-[99] top-[50%] left-[50%] translate-x-[-70%] translate-y-[-50%]">
+                    <div
+                      className="bg-inherit hover:bg-inherit  hidden group-hover:block cursor-pointer"
+                      onClick={() => {
+                        props.setOpenModal("dismissible");
+                        setModalImg({
+                          id: item.id,
+                          img: item.img,
+                        });
+                      }}
+                    >
+                      <img src={searchLogo} />
+                    </div>
+                    <Modal
+                      className="z-[100] mt-[20px]"
+                      show={props.openModal === "dismissible"}
+                      onClose={() => props.setOpenModal(undefined)}
+                    >
+                      <Modal.Header className="absolute right-0 border-b-0 "></Modal.Header>
+                      <Modal.Body className="mx-auto  w-full max-w-[400px]">
+                        <img
+                          src={modalImg.img}
+                          className="h-[500px]  border-2 object-cover p-0 w-full max-w-[400px]"
+                        />
+                      </Modal.Body>
+                    </Modal>
                   </div>
-                  <Modal
-                    className="z-[100] mt-[20px]"
-                    show={props.openModal === "dismissible"}
-                    onClose={() => props.setOpenModal(undefined)}
-                  >
-                    <Modal.Header className="absolute right-0 border-b-0 "></Modal.Header>
-                    <Modal.Body className="mx-auto  w-full max-w-[400px]">
-                      <img
-                        src={modalImg.img}
-                        className="h-[500px]  border-2 object-cover p-0 w-full max-w-[400px]"
-                      />
-                    </Modal.Body>
-                  </Modal>
+                  <img
+                    src={item.img}
+                    alt="certificated img"
+                    className="transition-opacity w-full group-hover:blur-sm group-hover:block"
+                  />
                 </div>
-                <img
-                  src={item.img}
-                  alt="certificated img"
-                  className="transition-opacity w-full group-hover:blur-sm group-hover:block"
-                />
-              </div>
-            );
-          })}
-        </Carousel>
+              );
+            })}
+          </Carousel>
+        </Fade>
         ;
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { Slide } from "react-awesome-reveal";
+import { Slide, Fade } from "react-awesome-reveal";
 //images
 import { emailLogoWhite, callLogoWhite, timeLogoWhite } from "../assets/index";
 //components
@@ -49,28 +49,30 @@ function Contact() {
               })}
             </div>
           </div>
-          <form className="flex flex-col pt-4 gap-y-[3px] desktopLg:mr-12  tabletLg:flex-col tabletLg:items-center desktopSm:mr-0">
-            <div className="flex items-center mb-6 gap-4 desktopLg:flex-col ">
-              <Input type="text" placeholder="Your name*" required={true} />{" "}
-              <br className="desktopLg:hidden" />
-              <Input
-                type="tel"
-                placeholder="Phone number*"
-                required={true}
-              />{" "}
-              <br className="desktopLg:hidden" />
-            </div>
-            <textarea
-              id="input-warning"
-              className="outline-none bg-transparent text-[#fff] font-rubik font-regular w-full max-w-[758px] placeholder:pl-3 placeholder:text-[#fff] px-3 border-[2px] border-[#4E5683] mobileLg:w-[350px]:w-[300px] mobileMd:h-[100px] mobileSm:max-w-[250px]"
-              cols="30"
-              rows="5"
-              placeholder="Your Message"
-            ></textarea>
-            <span className="mt-auto tabletLg:flex tabletLg:flex-col tabletLg:items-center">
-              <Button title="Submit Message" path={"/"} />
-            </span>
-          </form>
+          <Fade duration={3000}>
+            <form className="flex flex-col pt-4 gap-y-[3px] desktopLg:mr-12  tabletLg:flex-col tabletLg:items-center desktopSm:mr-0">
+              <div className="flex items-center mb-6 gap-4 desktopLg:flex-col ">
+                <Input type="text" placeholder="Your name*" required={true} />{" "}
+                <br className="desktopLg:hidden" />
+                <Input
+                  type="tel"
+                  placeholder="Phone number*"
+                  required={true}
+                />{" "}
+                <br className="desktopLg:hidden" />
+              </div>
+              <textarea
+                id="input-warning"
+                className="outline-none bg-transparent text-[#fff] font-rubik font-regular w-full max-w-[758px] placeholder:pl-3 placeholder:text-[#fff] px-3 border-[2px] border-[#4E5683] mobileLg:w-[350px]:w-[300px] mobileMd:h-[100px] mobileSm:max-w-[250px]"
+                cols="30"
+                rows="5"
+                placeholder="Your Message"
+              ></textarea>
+              <span className="mt-auto tabletLg:flex tabletLg:flex-col tabletLg:items-center">
+                <Button title="Submit Message" path={"/"} />
+              </span>
+            </form>
+          </Fade>
         </div>
       </div>
     </div>
