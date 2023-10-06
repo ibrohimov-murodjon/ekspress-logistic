@@ -1,4 +1,4 @@
-import { Slide } from "react-awesome-reveal";
+import { Slide, Fade } from "react-awesome-reveal";
 import { SubText, Button } from "../components";
 import video from "../assets/bg-video.mp4";
 
@@ -27,8 +27,10 @@ function Hero() {
             We are ready to prove that we can deliver your cargo to any
             destiantion safely and quickly
           </p>
-          <Button title="Premium Class" path={'/premium'} />
         </Slide>
+        <Fade duration={3500}>
+          <Button title="Premium Class" path={"/premium"} />
+        </Fade>
       </div>
       <a href="#about">
         <svg className="arrows z-[99]">
