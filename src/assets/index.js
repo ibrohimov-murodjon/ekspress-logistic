@@ -9,5 +9,7 @@ export {default as callLogoWhite} from "./call_logo-white.svg";
 export {default as emailLogoWhite} from "./email.svg";
 export {default as timeLogoWhite} from "./time-logo-white.svg";
 export { default as Certificated } from "./certificated.png";
+export { default as Certificate2 } from "./certificated2.png";
+export { default as Certificate3 } from "./certificated3.png";
 export { default as Director } from "./director-photo.png";
 export { default as searchLogo } from "./search-icon.svg";

@@ -27,7 +27,7 @@ function Hero() {
             We are ready to prove that we can deliver your cargo to any
             destiantion safely and quickly
           </p>
-          <Button title="Premium Class" />
+          <Button title="Premium Class" path={'/premium'} />
         </Slide>
       </div>
       <a href="#about">

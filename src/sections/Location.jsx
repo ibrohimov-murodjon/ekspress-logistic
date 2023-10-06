@@ -13,7 +13,7 @@ function Location() {
           >
             <li className="mr-2" role="presentation">
               <button
-                className="flex items-center gap-5 p-4 border-b-2 rounded-t-lg text-white font-rubik hover:text-[#1C64F2]"
+                className="flex items-center gap-5 p-4 border-b-2 rounded-t-lg text-white font-rubik"
                 id="profile-tab"
                 data-tabs-target="#profile"
                 type="button"
@@ -27,7 +27,7 @@ function Location() {
             </li>
             <li className="mr-2 " role="presentation">
               <button
-                className="flex items-center gap-5 p-4 border-b-2 rounded-t-lg text-white font-rubik hover:text-[#1C64F2] "
+                className="flex items-center gap-5 p-4 border-b-2 rounded-t-lg text-white font-rubik"
                 id="dashboard-tab"
                 data-tabs-target="#dashboard"
                 type="button"
