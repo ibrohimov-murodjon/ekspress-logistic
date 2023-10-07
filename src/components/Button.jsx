@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 
-function Button({ title, path }) {
+function Button({ title }) {
   return (
-    <Link
-      to={path}
+    <button
       className="btn-grad w-[250px] font-krub tracking-wide font-medium z-[10]"
     >
       {title}
-    </Link>
+    </button>
   );
 }
 

@@ -34,17 +34,21 @@ const CountriesSlider = () => {
         <div className="pt-[30px] z-[10]">
           <SubText title="Our Partners" bgclr="#f3f3f3" />
         </div>
-        <div className="z-[10] flex font-medium text-[35px] text-white leading-[47px] font-rubik">
-          M{" "}
-          <small>
-            {" "}
-            <img src={PartnersTextImg} />
-          </small>{" "}
-          st of our trusted customers are from
+        <div className="myContainer z-[10] w-full items-center flex font-medium text-[35px] text-white leading-[47px] font-rubik maxSm:text-[24px] maxSm:justify-center">
+          <span className="mobileLg:hidden">M</span>
+          <img src={PartnersTextImg} className="mobileLg:hidden" />
+          <span className="mobileLg:hidden">
+            st of our trusted customers are from
+          </span>
+          <span className="hidden mobileLg:flex max-w-[450px] text-center">
+            Most of our trusted customers are from
+          </span>
         </div>
       </Slide>
       <Zoom>
-        <Button title="Be Our Partner" path={"/"} />
+        <a href="#contact">
+          <Button title="Be Our Partner" path={"/"} />
+        </a>
       </Zoom>
       <div class="ticker-container  absolute bottom-0 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md backdrop-opacity-10">
         <div class="ticker-tape">
