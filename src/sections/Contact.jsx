@@ -1,8 +1,9 @@
 
 //images
+import { Modal } from 'flowbite-react'
 import { emailLogoWhite, callLogoWhite,timeLogoWhite } from '../assets/index'
 //components
-import { Button, ContactElement, Input, SubText } from '../components'
+import { Button, ContactElement, Input, SubText, ModalEl } from '../components'
 
 
 const contactData = [
@@ -29,8 +30,10 @@ function Contact() {
       <SubText title="Contact us" bgclr="#787D95" className="mb-[43px]" />
         <div className="flex items-center justify-between tabletMax:flex-col tabletMax:gap-y-8">
         <div>
+        <ModalEl/>
         <h1 className='mb-1 text-white w-full max-w-[353px] text-[35px] font-bold font-rubik leading-normal tabletMax:text-center tabletMax:max-w-[400px] mobileMd:w-[350px] mobileMd:text-[28px] mobileMd:leading-snug mobileSm:text-[23px] mobileSm:max-w-[300px]'>Get in touch with us</h1>
         <p className='w-full max-w-[450px] text-white font-medium font-krub leading-[24px] text-[16px] mb-[32px] tabletMax:text-center tabletMax:w-[400px] mobileMd:text-[13px] mobileMd:w-[350px] mobileMd:leading-normal mobileSm:text-[11px] mobileSm:max-w-[300px]'>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
+        
         <div className='flex flex-col gap-y-[30px] tabletMax:justify-center'>
         {contactData.map((item) => {
         return(
