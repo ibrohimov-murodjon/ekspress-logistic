@@ -17,13 +17,14 @@ module.exports = {
         bold: "600",
       },
       screens: {
+        desktopLg: { max: "1240px" },
         desktop: { max: "1161px" },
+        tabletLg: { max: "940px" },
         desktopSm: { max: "910px" },
-        tabletMax:{max: "794px"},
+        tabletMax: { max: "794px" },
         mobileLg: { max: "545px" },
         mobileMd: { max: "400px" },
         mobileSm: { max: "365px" },
-        
       },
       colors: {
         bgVideo: "rgba(0,0,0,.6)",

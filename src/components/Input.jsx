@@ -1,16 +1,16 @@
 // import {  TextInput } from 'flowbite-react';
 
-const Input = ({type, placeholder}) => {
+const Input = ({ type, placeholder, required }) => {
   return (
-    <div  className="w-[365px] mobileMd:flex mobileMd:flex-col mobileMd:items-center" >
-    <input
-    className='w-full max-w-[400px] placeholder:pl-3 placeholder:text-[#bb9753] py-3 border-[2px] rounded border-[#bb9753] mobileMd:w-[300px] mobileMd:py-2 mobileSm:max-w-[250px]'
-      placeholder={placeholder}
-      type={type}
-      required
-    />
-  </div>
-  )
-}
+    <div className="w-[365px] mobileMd:flex mobileMd:flex-col mobileMd:items-center desktopLg:w-[450px] mobileLg:w-[350px]">
+      <input
+        className="w-full font-rubik bg-transparent max-w-[400px] text-[#fff] placeholder:pl-3 placeholder:text-[#fff] py-3 border-[2px] border-[#4E5683]  desktopLg:max-w-[500px] mobileLg:max-w-[350px] mobileMd:py-2 mobileSm:max-w-[250px]"
+        placeholder={placeholder}
+        type={type}
+        required={required}
+      />
+    </div>
+  );
+};
 
-export default Input
+export default Input;

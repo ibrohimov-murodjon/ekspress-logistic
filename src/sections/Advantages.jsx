@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Slide } from "react-awesome-reveal";
+import { Slide, Fade } from "react-awesome-reveal";
 import { SubText } from "../components";
 import arrowLeft from "../assets/arrow-left.png";
 import { Card } from "flowbite-react";
@@ -76,7 +76,7 @@ function Advantages() {
           </h1>
         </Slide>
         <div className="relative mt-6 ">
-          {/* <Slide direction="up" duration={2000}> */}
+          <Fade duration={3000}>
           <Carousel
             additionalTransfrom={0}
             arrows={false}
@@ -148,7 +148,7 @@ function Advantages() {
               </Card>
             ))}
           </Carousel>
-          {/* </Slide> */}
+          </Fade>
         </div>
       </div>
     </div>
