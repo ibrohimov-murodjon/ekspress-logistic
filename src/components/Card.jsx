@@ -12,17 +12,17 @@ function Card({ img, name, role, bgDark, tglink, number, borderNone }) {
       <img
         src={img}
         alt="director logo"
-        className="w-full object-cover rounded-tl-lg rounded-tr-lg"
+        className="w-full object-cover rounded-tl-lg rounded-tr-lg maxSm:max-w-[300px]"
       />
       <div className="p-5">
         <h5
-          className="text-xl font-rubik font-medium"
+          className="text-xl font-rubik font-medium maxSm:text-base"
           style={{ color: `${bgDark ? "#fff" : "#141414"}` }}
         >
           {name}
         </h5>
         <p
-          className="text-base font-krub font-medium"
+          className="text-base font-krub font-medium maxSm:text-sm"
           style={{ color: `${bgDark ? "#fff" : "#141414"}` }}
         >
           {role}

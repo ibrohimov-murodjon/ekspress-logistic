@@ -1,6 +1,7 @@
 import { Slide, Fade } from "react-awesome-reveal";
 import { SubText, Button } from "../components";
 import video from "../assets/bg-video.mp4";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -20,16 +21,18 @@ function Hero() {
       <div className="z-[99] myContainer">
         <Slide direction="left" duration={3500}>
           <SubText title="Trans Ekspress Logistics" bgclr="#043265" white />
-          <h1 className="text-white text-5xl max-w-2xl font-bold font-rubik">
+          <h1 className="text-white text-5xl max-w-2xl font-bold font-rubik maxSm:text-4xl">
             Logistics tailored to meet your business needs
           </h1>
-          <p className="text-white max-w-lg font-regular font-rubik text-[16px] pt-4">
+          <p className="text-white max-w-lg font-regular font-rubik text-[16px] pt-4 ">
             We are ready to prove that we can deliver your cargo to any
             destiantion safely and quickly
           </p>
         </Slide>
         <Fade duration={3500}>
+          <Link to='premium'>
           <Button title="Premium Class" path={"/premium"} />
+          </Link>
         </Fade>
       </div>
       <a href="#about">
