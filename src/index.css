@@ -72,7 +72,9 @@ html {
 body {
   overflow-x: hidden;
 }
-
+.red{
+  background: red;
+}
 .btn-grad {
   background-image: linear-gradient(
     to right,
