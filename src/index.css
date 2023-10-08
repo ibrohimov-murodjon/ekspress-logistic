@@ -113,7 +113,7 @@ body {
     position: relative;
   }
   .header {
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
   }
