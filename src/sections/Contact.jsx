@@ -5,13 +5,26 @@ import { emailLogoWhite, callLogoWhite, timeLogoWhite } from "../assets/index";
 import { Button, ContactElement, Input, SubText } from "../components";
 
 const contactData = [
-  { id: 1, img: emailLogoWhite, title: "Email", text: "contact@logistics.com" },
-  { id: 2, img: callLogoWhite, title: "Call Us", text: "(00) 112 365 489" },
+  {
+    id: 1,
+    img: emailLogoWhite,
+    title: "Email",
+    text: "contact@logistics.com",
+    href: "mailto",
+  },
+  {
+    id: 2,
+    img: callLogoWhite,
+    title: "Call Us",
+    text: "(00) 112 365 489",
+    href: "tel",
+  },
   {
     id: 3,
     img: timeLogoWhite,
     title: "Mon - Sat 9.00 - 18.00",
     text: "Sunday Closed",
+    href: "",
   },
 ];
 function Contact() {
@@ -43,6 +56,7 @@ function Contact() {
                       img={item.img}
                       title={item.title}
                       text={item.text}
+                      href={item.href}
                     />
                   </Slide>
                 );

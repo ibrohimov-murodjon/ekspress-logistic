@@ -70,7 +70,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .btn-grad {
@@ -98,6 +98,27 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
+.sticky-header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 998;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+  .header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+  }
+}
+
 .arrows {
   width: 60px;
   height: 72px;
@@ -168,7 +189,7 @@ body {
 
 /* CountriesSlider css */
 
-.countries{
+.countries {
   background: url(./assets/countriesBg.png);
   background-position: top center;
   background-size: cover;
@@ -183,7 +204,8 @@ body {
   width: 100%;
 }
 
-.ticker-container .ticker-tape:before, .ticker-container .ticker-tape:after {
+.ticker-container .ticker-tape:before,
+.ticker-container .ticker-tape:after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 100px;
@@ -196,14 +218,14 @@ body {
   top: 0;
   transform: rotateZ(180deg);
 }
- 
+
 .ticker-container .ticker-tape:before {
   left: 0;
   top: 0;
 }
 .ticker-container .slide-track {
   -webkit-animation: scroll 30s linear infinite;
-          animation: scroll 30s linear infinite;
+  animation: scroll 30s linear infinite;
   display: flex;
   width: calc(250px * 14);
 }
