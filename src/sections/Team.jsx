@@ -1,4 +1,4 @@
-import { Slide } from "react-awesome-reveal";
+import { Slide, Fade } from "react-awesome-reveal";
 import { Card, SubText } from "../components";
 import TeamPhotoOne from "../assets/team_img_1.png";
 import TeamPhotoTwo from "../assets/team_img_2.png";
@@ -37,24 +37,26 @@ function Team() {
       id="team"
       className="flex flex-col items-center pt-[120px] pb-[77px] bg-[#111C55]"
     >
-      <Slide direction="down" duration={2000}>
+      <Slide direction="down">
         <SubText title="Our Team" bgclr="#F3F3F3" />
         <h1 className="text-4xl text-white font-rubik font-bold">Our Team</h1>
       </Slide>
-      <div className="myContainer flex items-center flex-wrap justify-center gap-5 mt-7">
-        {data.map((card, index) => (
-          <Card
-            key={index}
-            img={card.img}
-            name={card.name}
-            role={card.role}
-            tglink={card.tglink}
-            number={card.number}
-            bgDark={card.bgDark}
-            borderNone
-          />
-        ))}
-      </div>
+      <Fade duration={3500}>
+        <div className="myContainer flex items-center flex-wrap justify-center gap-5 mt-7">
+          {data.map((card, index) => (
+            <Card
+              key={index}
+              img={card.img}
+              name={card.name}
+              role={card.role}
+              tglink={card.tglink}
+              number={card.number}
+              bgDark={card.bgDark}
+              borderNone
+            />
+          ))}
+        </div>
+      </Fade>
     </div>
   );
 }
