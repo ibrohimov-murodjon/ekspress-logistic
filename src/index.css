@@ -72,8 +72,22 @@ html {
 body {
   overflow-x: hidden;
 }
-.red{
-  background: red;
+.premiumBac{
+  /* background-image: url(./assets/premiumBac.png); */
+  background: linear-gradient(90deg, #032D5F 22.06%, rgba(9, 18, 66, 0.20) 51.49%);
+  position: relative;
+  padding-bottom: 15px;
+}
+.premiumBac::before {
+  content: url('./assets/premiumBac.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.premiumGra{
+  
 }
 .btn-grad {
   background-image: linear-gradient(
