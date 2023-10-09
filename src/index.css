@@ -109,6 +109,16 @@ body {
   -webkit-backface-visibility: hidden;
 }
 
+.header__container {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  -webkit-backface-visibility: hidden;
+  background: red;
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     position: relative;
@@ -119,14 +129,6 @@ body {
     width: 100%;
     top: 0;
   } */
-  .header__container {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 999;
-    -webkit-backface-visibility: hidden;
-  }
 }
 
 .arrows {

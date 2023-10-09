@@ -60,7 +60,7 @@ function Header() {
   };
 
   return (
-    <div className="header bg-[#091242] maxSm:shadow-2xl z-[999] w-full pt-11 pb-7 max-desktop:pt-6 maxSm:pt-2 maxSm:pb-0">
+    <div className="header__container bg-[#091242] maxSm:shadow-2xl z-[999] w-full pt-11 pb-7 max-desktop:pt-6 maxSm:pt-2 maxSm:pb-0">
       <div className="myContainer header__container flex justify-between flex-wrap items-center desktop:justify-center maxSm:h-[100px]">
         <Slide direction="left" duration={3000}>
           <Link to="/" className="pr-4">
