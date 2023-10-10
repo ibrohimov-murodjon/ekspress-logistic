@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Slide } from "react-awesome-reveal";
-import { instaLogo, faceLogo } from "../assets";
+import { instaLogo, tgLogo } from "../assets";
 
 const navLinks = [
   {
@@ -196,11 +196,15 @@ const languageData = [
   },
 ];
 
+const handleClick = (e) => {
+  console.log(e.target.innerText);
+};
+
 function Navbar() {
   return (
-    <nav className="navbar sticky-header bg-white bg-opacity-30 backdrop-filter backdrop-blur-md ">
+    <nav className="navbar sticky-header bg-white bg-opacity-30 backdrop-filter backdrop-blur-md pt-3">
       <div className="myContainer">
-        <div className="flex items-center justify-between pt-[30px] pb-[26px] mobileLg:flex-col maxSm:justify-center mobileLg:pt-[16px]">
+        <div className="flex items-center justify-between pt-[18px] pb-[18px] mobileLg:flex-col maxSm:justify-center mobileLg:pt-[16px]">
           <Slide direction="down" duration={2500} className="maxSm:hidden">
             <div className="flex space-x-4  items-center">
               {navLinks.map((link, index) => (
@@ -218,91 +222,93 @@ function Navbar() {
           </Slide>
           <div className="flex gap-4 items-center maxSm:w-full maxSm:justify-between ">
             <Slide direction="down" duration={2500}>
-              <div className="flex items-center gap-x-6 mobileLg:mt-4">
-                <a href="https://www.instagram.com/" target={"_blank"}>
+              <div className="flex items-center gap-x-6 ">
+                <a
+                  href="https://www.instagram.com/t.eks.logistic/"
+                  target={"_blank"}
+                >
                   <img
                     src={instaLogo}
                     alt="instagram logo"
                     className="w-[28px]"
                   />
                 </a>
-                <a href="https://www.facebook.com/" target={"_blank"}>
-                  <img
-                    src={faceLogo}
-                    alt="instagram logo"
-                    className="w-[28px]"
-                  />
+                <a href="https://t.me/ekspress_logistics" target={"_blank"}>
+                  <img src={tgLogo} alt="telegram logo" className="w-[32px]" />
                 </a>
               </div>
             </Slide>
-            <div class="flex items-center md:order-2">
-              <button
-                type="button"
-                data-dropdown-toggle="language-dropdown-menu"
-                class="inline-flex  text-white items-center font-krub font-medium justify-center pl-2 text-base rounded-lg cursor-pointer"
-              >
-                <svg
-                  class="w-7 h-7 mr-2 rounded-full"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 3900 3900"
+            <Slide direction="right" duration={2500}>
+              <div className="flex items-center pt-1 md:order-2  mobileLg:pt-0">
+                <button
+                  type="button"
+                  data-dropdown-toggle="language-dropdown-menu"
+                  class="inline-flex  text-white items-center font-krub font-medium justify-center pl-2 text-base rounded-lg cursor-pointer"
                 >
-                  <path fill="#b22234" d="M0 0h7410v3900H0z" />
-                  <path
-                    d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0"
-                    stroke="#fff"
-                    stroke-width="300"
-                  />
-                  <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
-                  <g fill="#fff">
-                    <g id="d">
-                      <g id="c">
-                        <g id="e">
-                          <g id="b">
-                            <path
-                              id="a"
-                              d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"
-                            />
-                            <use xlink:href="#a" y="420" />
-                            <use xlink:href="#a" y="840" />
-                            <use xlink:href="#a" y="1260" />
+                  <svg
+                    className="w-7 h-7 mr-2 rounded-full"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 3900 3900"
+                  >
+                    <path fill="#b22234" d="M0 0h7410v3900H0z" />
+                    <path
+                      d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0"
+                      stroke="#fff"
+                      stroke-width="300"
+                    />
+                    <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
+                    <g fill="#fff">
+                      <g id="d">
+                        <g id="c">
+                          <g id="e">
+                            <g id="b">
+                              <path
+                                id="a"
+                                d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"
+                              />
+                              <use xlink:href="#a" y="420" />
+                              <use xlink:href="#a" y="840" />
+                              <use xlink:href="#a" y="1260" />
+                            </g>
+                            <use xlink:href="#a" y="1680" />
                           </g>
-                          <use xlink:href="#a" y="1680" />
+                          <use xlink:href="#b" x="247" y="210" />
                         </g>
-                        <use xlink:href="#b" x="247" y="210" />
+                        <use xlink:href="#c" x="494" />
                       </g>
-                      <use xlink:href="#c" x="494" />
+                      <use xlink:href="#d" x="988" />
+                      <use xlink:href="#c" x="1976" />
+                      <use xlink:href="#e" x="2470" />
                     </g>
-                    <use xlink:href="#d" x="988" />
-                    <use xlink:href="#c" x="1976" />
-                    <use xlink:href="#e" x="2470" />
-                  </g>
-                </svg>
-                English (US)
-              </button>
-              <div
-                class="z-[999] hidden my-4 text-base list-none bg-gradient-to-r from-[#522db8] to-[#111C55] divide-y divide-gray-100 rounded-lg shadow"
-                id="language-dropdown-menu"
-              >
-                <ul class="py-2 font-medium" role="none">
-                  {languageData.map((lan) => (
-                    <li key={lan.id}>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 text-sm text-white"
-                        role="menuitem"
-                      >
-                        <div class="inline-flex items-center">
-                          {lan.img}
-                          {lan.name}
-                        </div>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+                  </svg>
+                  English (US)
+                </button>
+                <div
+                  className="z-[999] hidden my-4 text-base list-none bg-gradient-to-r from-[#522db8] to-[#111C55] divide-y divide-gray-100 rounded-lg shadow"
+                  id="language-dropdown-menu"
+                >
+                  <ul className="py-2 font-medium" role="none">
+                    {languageData.map((lan) => (
+                      <li key={lan.id}>
+                        <a
+                          href="#"
+                          className="block px-4 py-2 text-sm text-white"
+                          role="menuitem"
+                          onClick={(e) => handleClick(e)}
+                        >
+                          <div class="inline-flex items-center">
+                            {lan.img}
+                            {lan.name}
+                          </div>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
+            </Slide>
           </div>
         </div>
       </div>

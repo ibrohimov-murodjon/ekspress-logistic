@@ -18,6 +18,7 @@ export { default as searchLogo } from "./search-icon.svg";
 export { default as burger } from "./burger.svg";
 export { default as close } from "./close.svg";
 export { default as logo } from "./logo.svg";
+export { default as newLogo } from "./new_logo.svg";
 export { default as emailLogo } from "./email.png";
 export { default as instaLogo } from "./instagram_logo.svg";
-export { default as faceLogo } from "./facebook_logo.svg";
+export { default as tgLogo } from "./telegram__logo.svg";

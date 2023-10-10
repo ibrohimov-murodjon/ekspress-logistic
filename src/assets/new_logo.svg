@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 102.98px;
+        letter-spacing: -.01em;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: Krub-SemiBold, Krub;
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        fill: #5523c4;
+        font-size: 204.11px;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="440.23" y1="95.45" x2="535.23" y2="405.12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5930bc"/>
+      <stop offset=".47" stop-color="#a262fe"/>
+      <stop offset=".76" stop-color="#94c8ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="592.91" y1="579.28" x2="592.91" y2="103.02" gradientUnits="userSpaceOnUse">
+      <stop offset=".03" stop-color="#5128b4"/>
+      <stop offset=".59" stop-color="#a262fe"/>
+      <stop offset=".97" stop-color="#8be1fc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="415.03" y1="620.14" x2="415.03" y2="88.71" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#90e0f9"/>
+      <stop offset=".21" stop-color="#a262fe"/>
+      <stop offset=".82" stop-color="#5128b4"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-5" d="M421.67,88.71c51.16-14.87,118.83-8.76,160.18,15.41,70.7,46.2,70.61,124.46,47.87,212.98-1.86-224.1-296.25-202.46-295.41-7.53-21.27-104.27-10.82-189.25,87.36-220.86Z"/>
+  <path class="cls-1" d="M581.85,104.11c55.34,61.49,64.81,136.51,48.63,208.64-14.37,85.89-70.54,160.11-148.27,228.29,16.56,40.99,44.24,52.92,88.48,21.5,60.46-56.19,104.22-118.84,123.87-190.81,13.02-47.72,12.21-98.3-3.95-145.06-20.54-59.43-60.39-100.51-108.76-122.57Z"/>
+  <path class="cls-4" d="M570.7,562.55c-35.89,19.74-63.77,2.3-89.97-22.93-51.92-43.78-89.67-88.24-114.69-134.24-24.96-45.91-36.61-97.87-34.6-150.09,3.6-93.26,34.62-147.85,90.23-166.59-94.05,24.55-152.59,100.97-161.44,197.37-1.92,20.85-.61,41.87,3.46,62.42,17.79,89.71,76.36,175.87,179.17,258.18,58.67,34.37,77.99-3.12,127.84-44.12Z"/>
+  <text class="cls-3" transform="translate(431.92 407.91)"><tspan x="0" y="0">T</tspan></text>
+  <text class="cls-2" transform="translate(231.46 760.61)"><tspan x="0" y="0">EKSPRESS</tspan><tspan x="29.66" y="112.68">LOGISTIC</tspan></text>
+</svg>
