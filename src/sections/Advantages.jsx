@@ -9,27 +9,27 @@ const data = [
   {
     id: 1,
     title: "Reliability",
-    desc: "Warranty for inventory to be delivered to customers' on-time.               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate illo temporibus atque delectus quo. Architecto nam id repellendus eos.",
+    desc: "Our warranty secures timely inventory arrival, providing peace of mind. We surpass expectations, ensuring your agreed-upon schedule is met. Our steadfast dedication ensures your satisfaction and business continuity.",
   },
   {
     id: 2,
     title: "Affordable Prices",
-    desc: "We offer the first cheap and affordable prices in the market               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate illo temporibus atque delectus quo. Architecto nam id repellendus eos.",
+    desc: "Experience unmatched value with our budget-friendly prices. We redefine market affordability, ensuring quality without compromise. Your satisfaction meets unbeatable prices at our destination.",
   },
   {
     id: 3,
-    title: "Experts’ help",
-    desc: "Our experts are always ready to support you and give you the necessary advice Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate illo temporibus atque delectus quo. Architecto nam id repellendus eos.",
+    title: "Expert Support",
+    desc: "Always ready to assist you. Count on our round-the-clock experts for immediate assistance and invaluable advice. Your needs are our priority, ensuring you have constant support whenever required.",
   },
   {
     id: 4,
-    title: "Transportation",
-    desc: "We plan and support the distribution of goods to their final destination. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate illo temporibus atque delectus quo. Architecto nam id repellendus eos.",
+    title: "Transportation management",
+    desc: "Our dedicated approach ensures seamless transport from origin to destination with strategic route optimization. Trust us for end-to-end support in navigating logistics for a successful distribution process.",
   },
   {
     id: 5,
     title: "Responsible Drivers",
-    desc: "We provide all trustworthy, educated, and expert drivers. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate illo temporibus atque delectus quo. Architecto nam id repellendus eos.",
+    desc: "Rely on us for a team of trustworthy, educated, and expert drivers, ensuring responsible and secure transportation. Our dedicated workforce prioritizes safety, reliability, and professionalism in every journey.",
   },
 ];
 
@@ -132,7 +132,7 @@ function Advantages() {
                       {item.title}
                     </h5>
                   </div>
-                  <p className="font-normal text-white">{item.desc}</p>
+                  <p className="font-normal font-rubik text-white">{item.desc}</p>
                 </Card>
               ))}
             </Carousel>

@@ -1,7 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Slide } from "react-awesome-reveal";
-import { logo, callLogo, emailLogo, timeLogo, close, burger } from "../assets";
+import {
+  logo,
+  callLogo,
+  emailLogo,
+  timeLogo,
+  close,
+  burger,
+  newLogo,
+} from "../assets";
 import { ContactElement } from "../components";
 
 const navLinks = [
@@ -32,14 +40,14 @@ const contactData = [
     id: 1,
     img: emailLogo,
     title: "Email",
-    text: "contact@logistics.com",
+    text: "t.eks.logistic@gmail.com",
     href: "mailto",
   },
   {
     id: 2,
     img: callLogo,
     title: "Call Us",
-    text: "(00) 112 365 489",
+    text: "+998770016060",
     href: "tel",
   },
   {
@@ -61,13 +69,13 @@ function Header() {
 
   return (
     <div className="header__container bg-[#091242] maxSm:shadow-2xl z-[999] w-full pt-11 pb-7 max-desktop:pt-6 maxSm:pt-2 maxSm:pb-0">
-      <div className="myContainer header__container flex justify-between flex-wrap items-center desktop:justify-center maxSm:h-[100px]">
+      <div className="myContainer  flex justify-between flex-wrap items-center desktopMin:justify-center maxSm:h-[100px]">
         <Slide direction="left" duration={3000}>
           <Link to="/" className="pr-4">
             <img
-              src={logo}
+              src={newLogo}
               alt="logo"
-              className="w-[260px] h-[80px] inline-block maxSm:flex mobileSm:w-[200px]"
+              className="w-[80px] inline-block maxSm:flex"
             />
           </Link>
         </Slide>
