@@ -9,3 +9,5 @@ export { default as ErrorElement } from "./ErrorElement";
 export { default as ContactElement } from "./ContactElement";
 export { default as Input } from "./Input";
 export { default as PremiumContact } from "./PremiumContact";
+export { default as ModalEl } from "./Modal";
+
