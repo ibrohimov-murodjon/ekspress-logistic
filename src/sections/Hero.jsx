@@ -22,7 +22,7 @@ function Hero() {
         <Slide direction="left" duration={3500}>
           <SubText title="Trans Ekspress Logistics" bgclr="#043265" white />
           <h1 className="text-white text-5xl max-w-2xl font-bold font-rubik maxSm:text-4xl">
-            Logistics tailored to meet your business needs
+            Together Faster
           </h1>
           <p className="text-white max-w-lg font-regular font-rubik text-[16px] pt-4 ">
             We are ready to prove that we can deliver your cargo to any
@@ -30,8 +30,8 @@ function Hero() {
           </p>
         </Slide>
         <Fade duration={3500}>
-          <Link to='premium'>
-          <Button title="Premium Class" path={"/premium"} />
+          <Link to="premium">
+            <Button title="Premium Class" path={"/premium"} />
           </Link>
         </Fade>
       </div>

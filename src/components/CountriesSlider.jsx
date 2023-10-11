@@ -50,23 +50,18 @@ const CountriesSlider = () => {
           <Button title="Be Our Partner" path={"/"} />
         </a>
       </Zoom>
-      <div class="ticker-container  absolute bottom-0 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md backdrop-opacity-10">
-        <div class="ticker-tape">
-          <div class="slide-track gap-x-14 ">
-            {countriesData.map((item) => {
-              return (
-                <div class="slide" key={item.id}>
-                  <li className="flex items-center gap-x-5 ">
-                    <img src={item.img} className="w-20 h-20" />
-                    <span className="w-fit text-white font-bold font-rubik leading-[35.5px] text-[40px]">
-                      {item.name}
-                    </span>
-                  </li>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+      <div className="flex items-center w-full absolute bottom-0 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md backdrop-opacity-10 text-white font-bold font-rubik  text-[40px] maxSm:text-[30px]">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+          {countriesData.map((item) => (
+            <>
+              <img
+                src={item.img}
+                className="w-20 h-20 inline-block mr-5 maxSm:w-14"
+              />
+              <span className="w-fit mr-[120px] ">{item.name}</span>
+            </>
+          ))}
+        </marquee>
       </div>
     </div>
   );

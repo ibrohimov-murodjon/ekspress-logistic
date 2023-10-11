@@ -49,7 +49,7 @@ function Location() {
                   aria-selected="false"
                 >
                   <img src={location} className="w-[25px]" alt="" />
-                  USA
+                  Tashkent
                 </button>
               </li>
             </ul>

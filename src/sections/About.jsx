@@ -10,7 +10,9 @@ function About() {
     >
       <Slide direction="down" duration={2000}>
         <SubText title="About Us" bgclr="#F3F3F3" />
-        <h1 className="text-4xl text-white font-rubik font-bold maxSm:text-3xl">About Us</h1>
+        <h1 className="text-4xl text-white font-rubik font-bold maxSm:text-3xl">
+          About Us
+        </h1>
       </Slide>
       <div className="w-[70%] h-[2px] bg-[#D6D6D6] mt-[43px]"></div>
       <div className="flex items-center justify-center mt-[43px] myContainer desktopSm:flex-col">
@@ -19,8 +21,8 @@ function About() {
             img={Director}
             name="Rasul Saloyev"
             role="Director"
-            tglink="https://t.me/heismurad"
-            number="+998911234567"
+            tglink="https://t.me/RSalayev"
+            number="+998902180095"
           />
         </Slide>
         <div className="w-[1px] h-[414px] bg-[#D6D6D6] ml-[30px] desktopSm:hidden"></div>

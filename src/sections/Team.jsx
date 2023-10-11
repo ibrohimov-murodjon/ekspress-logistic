@@ -9,8 +9,8 @@ const data = [
     img: TeamPhotoOne,
     name: "Bobur Jamolov",
     role: "Manager",
-    tglink: "https://t.me/heismurad",
-    number: "+998911234567",
+    tglink: "https://t.me/Bobur2125",
+    number: "+998770016060",
     bgDark: true,
   },
   {
