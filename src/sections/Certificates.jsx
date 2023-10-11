@@ -88,30 +88,8 @@ function Certificates() {
        responsive={responsive} className="pt-[50px] w-full ">
   {certificatedData.map((item) => {
     return(
-      <div className="bg-slate-200 h-[441px]  w-full max-w-[337px] group " key={item.id}>
-
-        <ModalEl img={item.img} >
-        <img src={searchLogo}  />
-          </ModalEl>
-      {/* <div className='absolute z-[99] top-[50%] left-[50%] translate-x-[-70%] translate-y-[-50%]'>
-      <div className='bg-inherit hover:bg-inherit  hidden group-hover:block cursor-pointer' onClick={() => {
-        props.setOpenModal('dismissible')
-        setModalImg({
-          img:item.img
-        })
-      }
-    
-    } >
-        <img src={searchLogo}  />
-      </div>
-        <Modal className='z-[100]  '  show={props.openModal === 'dismissible'} onClose={() => props.setOpenModal(undefined)}>
-          <Modal.Header className='absolute right-0 border-b-0  '></Modal.Header>
-          <Modal.Body className='mx-auto w-full max-w-[400px]' >
-            <img src={modalImg.img} className="h-[500px]  border-2 object-cover p-0 w-full max-w-[400px]" />
-          </Modal.Body>
-        </Modal>
-      </div> */}
-    <img src={item.img} alt="certificated img" className="transition-opacity w-full group-hover:blur-sm group-hover:block"  />
+      <div className="bg-slate-200 h-[441px]  w-full max-w-[337px] " key={item.id}>
+    <img src={item.img} alt="certificated img" className="transition-opacity w-full "  />
     </div>
     )
   })}

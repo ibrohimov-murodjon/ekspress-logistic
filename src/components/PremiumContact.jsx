@@ -58,7 +58,7 @@ const PremiumContact = () => {
           </li>
         ))}
       </ul>
-      <ul className="flex items-center flex-wrap justify-center gap-x-[131px] mt-[40px] mb-3 mobileLg:gap-y-[40px]">
+      {/* <ul className="flex items-center flex-wrap justify-center gap-x-[131px] mt-[40px] mb-3 mobileLg:gap-y-[40px]">
         {premiumData.map((element) => {
           return (
             <div
@@ -77,7 +77,7 @@ const PremiumContact = () => {
             </div>
           );
         })}
-      </ul>
+      </ul> */}
       <form className="flex items-center justify-center flex-col mt-6">
         <div className="flex flex-wrap gap-6 justify-center items-center gap-x-[28px] tabletLg:flex-col tabletLg:gap-0">
           <Input type="text" placeholder="Your name*" premium required={true} />{" "}
