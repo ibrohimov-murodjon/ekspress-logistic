@@ -18,8 +18,8 @@ function Home() {
       <Advantages />
       <Certificates />
       <CountriesSlider />
-      <Gallery/>
       <Team />
+      <Gallery/>
       <Contact />
       <Location />
     </div>

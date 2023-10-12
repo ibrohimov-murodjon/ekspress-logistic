@@ -29,7 +29,7 @@ const contactData = [
 ];
 function Contact() {
   return (
-    <div id="contact" className="bg-[#091242] ">
+    <div id="contact" className="bg-[#111c55] ">
       <div className="myContainer pt-[80px] pb-[100px] tabletLg:flex tabletLg:flex-col tabletLg:items-center tabletLg:pt-[40px]">
         <Slide direction="left" duration={700}>
           <SubText title="Contact" bgclr="#F3F3F3" className="mb-[43px]" />

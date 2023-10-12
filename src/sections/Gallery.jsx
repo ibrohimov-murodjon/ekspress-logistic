@@ -28,7 +28,7 @@ function Gallery() {
       </div>
       <div className='  flex h-[100%]  w-full'>
       <div className='rotate-90 w-full max-w-fit'>
-      <marquee className="h-[80vh]"  behavior="scroll" direction="left" scrollamount="5">
+      {/* <marquee className="h-[80vh]"  behavior="scroll" direction="left" scrollamount="5">
           {countriesData.map((item) => (
             <>
               <img
@@ -37,7 +37,7 @@ function Gallery() {
               />
             </>
           ))}
-        </marquee>
+        </marquee> */}
       </div>
         <div className='rotate-90 w-full max-w-fit'>
         <marquee className="h-[80vh]" behavior="scroll" direction="right" scrollamount="5">
@@ -45,7 +45,7 @@ function Gallery() {
             <>
               <img
                 src={item.img}
-                className="w-[200px] h-[250px] rotate-[-90deg] rounded-[10px] inline-block "
+                className="w-[400px] h-[350px] rotate-[-90deg]  inline-block "
               />
             </>
           ))}
@@ -57,7 +57,7 @@ function Gallery() {
             <>
               <img
                 src={item.img}
-                className="w-[200px] h-[250px] rotate-[-90deg] rounded-[10px]  inline-block  "
+                className="w-[400px] h-[350px] object-cover rotate-[-90deg]   inline-block  "
               />
               
             </>

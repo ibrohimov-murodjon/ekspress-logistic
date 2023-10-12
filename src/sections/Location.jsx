@@ -4,7 +4,7 @@ import location from "../assets/location.png";
 
 function Location() {
   return (
-    <div className="pt-[120px] pb-[78px] bg-[#111C55]">
+    <div className="pt-[120px] pb-[78px] bg-[#091242]">
       <div className="myContainer">
         <Slide
           direction="down"
