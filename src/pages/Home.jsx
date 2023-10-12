@@ -7,6 +7,7 @@ import {
   Location,
   Certificates,
   Contact,
+  Gallery,
 } from "../sections";
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
       <Advantages />
       <Certificates />
       <CountriesSlider />
+      <Gallery/>
       <Team />
       <Contact />
       <Location />

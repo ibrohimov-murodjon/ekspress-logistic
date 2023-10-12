@@ -1,7 +1,6 @@
 export { default as About } from "./About";
 export { default as Advantages } from "./Advantages";
 export { default as Certificates } from "./Certificates";
-export { default as Customers } from "./Customers";
 export { default as Contact } from "./Contact";
 export { default as Gallery } from "./Gallery";
 export { default as Hero } from "./Hero";

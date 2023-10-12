@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Slide } from "react-awesome-reveal";
-import { instaLogo, tgLogo } from "../assets";
+import { instaLogo, tgLogo, callLogoWhite, emailLogoNavbar } from "../assets";
 
 const navLinks = [
   {
@@ -235,6 +235,12 @@ function Navbar() {
                 </a>
                 <a href="https://t.me/ekspress_logistics" target={"_blank"}>
                   <img src={tgLogo} alt="telegram logo" className="w-[32px]" />
+                </a>
+                <a href="tel:+998941213399" target={"_blank"}>
+                  <img src={callLogoWhite} alt="telegram logo" className="w-[32px]" />
+                </a>
+                <a href="#" target={"_blank"}>
+                  <img src={emailLogoNavbar} alt="telegram logo" className="w-[32px]" />
                 </a>
               </div>
             </Slide>
