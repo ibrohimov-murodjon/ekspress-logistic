@@ -20,7 +20,7 @@ const countriesData = [
 function Gallery() {
   return (
     <div className='bg-[#091242] h-[80vh]  relative'>
-      <div className='myContainer flex justify-between w-full'>
+      <div className='myContainer flex justify-between w-full '>
       <div className='pt-8  max-w-[460px]'>
         <SubText title="Gallery" bgclr="#F3F3F3"/>
       <h1 className=" text-4xl text-white font-rubik font-bold maxSm:text-3xl">My Galeries</h1>
