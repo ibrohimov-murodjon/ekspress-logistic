@@ -3,8 +3,6 @@ import React from "react";
 import { Input, Button } from "../components";
 import Modal from "./Modal";
 
-
-
 const clientsGet = [
   {
     id: 1,
@@ -40,7 +38,7 @@ const PremiumContact = () => {
           </li>
         ))}
       </ul>
-      
+
       <form className="flex items-center justify-center flex-col mt-6">
         <div className="flex flex-wrap gap-6 justify-center items-center gap-x-[28px] tabletLg:flex-col tabletLg:gap-0">
           <Input type="text" placeholder="Your name*" premium required={true} />{" "}
@@ -73,7 +71,7 @@ const PremiumContact = () => {
             placeholder="Your Message"
           ></textarea>
         </div>
-        <Button  title="Submit Message" />
+        <Button title="Submit Message" />
       </form>
     </div>
   );

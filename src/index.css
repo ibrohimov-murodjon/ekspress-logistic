@@ -78,6 +78,18 @@ html {
 body {
   overflow-x: hidden !important;
 }
+.modal, .overlay{
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+}
+.overlay{
+  background: rgba(49, 49, 49, 0.8);
+}
 .btn-grad {
   background-image: linear-gradient(
     to right,
