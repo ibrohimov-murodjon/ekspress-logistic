@@ -5,6 +5,7 @@ import { SubText, PremiumContact } from '../components'
 //images
 import HomeIcon from '../assets/home-icon.svg'
 import RightIcon from '../assets/right-icon.svg'
+import DropTopBtn from "../components/DropTopBtn";
 
 function Premium() {
   return (
@@ -32,6 +33,7 @@ function Premium() {
       <div className="bg-[#091242]">
         <PremiumContact />
       </div>
+      <DropTopBtn/>
     </>
   );
 }
