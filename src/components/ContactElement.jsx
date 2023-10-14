@@ -1,5 +1,3 @@
-import React from "react";
-
 const ContactElement = ({ img, title, text, href }) => {
   return (
     <div className="flex items-center gap-x-[14px] mobileSm:ml-[10%]">

@@ -1,8 +1,7 @@
-import React from "react";
-
+//components
 import { Input, Button } from "../components";
-import Modal from "./Modal";
 
+//file-dataBase
 const clientsGet = [
   {
     id: 1,

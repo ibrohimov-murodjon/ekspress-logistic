@@ -1,5 +1,8 @@
+//react
 import { useState } from "react";
+//react-reveral for animtion
 import { Slide } from "react-awesome-reveal";
+//images
 import { instaLogo, tgLogo, callLogoWhite, emailLogoNavbar } from "../assets";
 
 const navLinks = [

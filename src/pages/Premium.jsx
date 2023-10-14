@@ -1,6 +1,8 @@
-import React from "react";
+//react-router-dom
 import { Link } from "react-router-dom";
+//components
 import { SubText, PremiumContact } from '../components'
+//images
 import HomeIcon from '../assets/home-icon.svg'
 import RightIcon from '../assets/right-icon.svg'
 

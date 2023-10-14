@@ -1,10 +1,16 @@
+//react-multi-carousel for carousel
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+//react-reveal for animation
 import { Slide, Fade } from "react-awesome-reveal";
+//components
 import { SubText } from "../components";
+//images
 import arrowLeft from "../assets/arrow-left.png";
+//flowbite library
 import { Card } from "flowbite-react";
 
+//file-dataBase
 const data = [
   {
     id: 1,

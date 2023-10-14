@@ -1,14 +1,14 @@
+//react
 import { useState } from 'react';
-//flovbite
-import {  Modal } from 'flowbite-react';
 //component
-import { ModalEl, SubText } from "../components";
+import {  SubText } from "../components";
 // carusel
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 //images
 import {Certificated, searchLogo, Director, emailLogoWhite} from '../assets/index'
 
+//file-dataBase
 const certificatedData = [
   {
     id: 1,
