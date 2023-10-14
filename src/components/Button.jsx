@@ -44,7 +44,6 @@ function Button({ title }) {
       >
         {title}
       </button>
-      //Modal-start
       <div
         className={`${
           modalEl ? "block " : "hidden"
@@ -67,7 +66,6 @@ function Button({ title }) {
           </p>
         </div>
         <ul className="flex items-center flex-wrap justify-center gap-x-[131px] mt-[20px] mb-5 desktopMid:mb-3 mobileLg:gap-y-[20px] mobileLg:gap-x-0 mobileMd:gap-y-[10px] mobileMd:mt-2">
-          //modal-contact
           {premiumData.map((element) => {
             return (
               <div
