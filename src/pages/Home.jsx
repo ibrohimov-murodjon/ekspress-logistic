@@ -1,4 +1,6 @@
+//components
 import { CountriesSlider } from "../components";
+//sections
 import {
   Hero,
   About,

@@ -1,4 +1,4 @@
-import React from 'react'
+//images
 import {
   galery1,
   galery2,
@@ -7,8 +7,10 @@ import {
   galery5,
   galery6,
 } from "../assets";
+//components
 import { SubText } from '../components';
 
+//file-dataBase
 const countriesData = [
   { id: 1, name: "George", img: galery1 },
   { id: 2, name: "Kazakhstan", img: galery2 },

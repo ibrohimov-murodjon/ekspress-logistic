@@ -1,6 +1,10 @@
+//react
 import { useState } from "react";
+//react-router-dom
 import { Link } from "react-router-dom";
+//react-revral for animtion
 import { Slide } from "react-awesome-reveal";
+//images
 import {
   logo,
   callLogo,
@@ -10,8 +14,10 @@ import {
   burger,
   newLogo,
 } from "../assets";
+//components
 import { ContactElement } from "../components";
 
+//file-dataBase
 const navLinks = [
   {
     name: "Home",

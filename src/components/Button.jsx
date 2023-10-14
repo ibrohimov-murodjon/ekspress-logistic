@@ -1,8 +1,12 @@
+//react
 import { useState } from "react";
+//react-router-dom
 import { Link } from "react-router-dom";
+//images
 import { callLogoWhite, emailLogoWhite, timeLogoWhite } from "../assets";
 import CloseBtn from "../assets/close-icon.svg";
 
+//fileDataBase
 const premiumData = [
   {
     id: 1,
@@ -24,10 +28,12 @@ const premiumData = [
   },
 ];
 
+//function
 const handleClick = (e)=>{
 e.stopPropagation()
 }
 
+//component
 function Button({ title }) {
   const [modalEl, setModalEl] = useState(false);
   return (
@@ -38,6 +44,7 @@ function Button({ title }) {
       >
         {title}
       </button>
+      //Modal-start
       <div
         className={`${
           modalEl ? "block " : "hidden"
@@ -60,6 +67,7 @@ function Button({ title }) {
           </p>
         </div>
         <ul className="flex items-center flex-wrap justify-center gap-x-[131px] mt-[20px] mb-5 desktopMid:mb-3 mobileLg:gap-y-[20px] mobileLg:gap-x-0 mobileMd:gap-y-[10px] mobileMd:mt-2">
+          //modal-contact
           {premiumData.map((element) => {
             return (
               <div

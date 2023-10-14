@@ -1,5 +1,8 @@
+//react-reveal for animation
 import { Slide, Fade } from "react-awesome-reveal";
+//components
 import { SubText } from "../components";
+//images
 import location from "../assets/location.png";
 
 function Location() {

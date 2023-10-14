@@ -1,8 +1,10 @@
+//react-reveal for animation
 import { Slide, Fade } from "react-awesome-reveal";
 //images
 import { emailLogoWhite, callLogoWhite, timeLogoWhite } from "../assets/index";
 //components
 import { Button, ContactElement, Input, SubText } from "../components";
+import DropTopBtn from "../components/DropTopBtn";
 
 const contactData = [
   {
@@ -88,6 +90,7 @@ function Contact() {
             </form>
           </Fade>
         </div>
+        <DropTopBtn/>
       </div>
     </div>
   );
