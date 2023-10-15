@@ -1,5 +1,3 @@
-import React from "react";
-
 function SubText({ title, bgclr, white }) {
   return (
     <div

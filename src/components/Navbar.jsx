@@ -1,4 +1,9 @@
+
+//react
+import { useState } from "react";
+//react-reveral for animtion
 import { Slide } from "react-awesome-reveal";
+//images
 import { instaLogo, tgLogo, callLogoWhite, emailLogoNavbar } from "../assets";
 import { Language } from "./";
 
@@ -61,19 +66,12 @@ function Navbar() {
                 <a href="https://t.me/ekspress_logistics" target={"_blank"}>
                   <img src={tgLogo} alt="telegram logo" className="w-[32px]" />
                 </a>
-                <a href="tel:+998941213399" target={"_blank"}>
-                  <img
-                    src={callLogoWhite}
-                    alt="telegram logo"
-                    className="w-[32px]"
-                  />
+
+                <a href="tel:+998770016060" target={"_blank"}>
+                  <img src={callLogoWhite} alt="telegram logo" className="w-[32px]" />
                 </a>
-                <a href="#" target={"_blank"}>
-                  <img
-                    src={emailLogoNavbar}
-                    alt="telegram logo"
-                    className="w-[32px]"
-                  />
+                <a href="mailto:t.eks.logistic@gmail.com" target={"_blank"}>
+                  <img src={emailLogoNavbar} alt="telegram logo" className="w-[32px]" />
                 </a>
               </div>
             </Slide>

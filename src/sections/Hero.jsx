@@ -1,6 +1,10 @@
+//react-reveal for animtion
 import { Slide, Fade } from "react-awesome-reveal";
+//components
 import { SubText, Button } from "../components";
+//images
 import video from "../assets/bg-video.mp4";
+//react-router-dom
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -9,6 +13,7 @@ function Hero() {
 
   return (
     <div
+      id="hero"
       className="relative flex flex-col 
         justify-center h-[840px] overflow-hidden mt-[-70px] mobileLg:mt-[-110px]"
     >

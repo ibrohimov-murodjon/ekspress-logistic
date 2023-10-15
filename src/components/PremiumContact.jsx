@@ -1,28 +1,7 @@
-import React from "react";
-import { callLogoWhite, emailLogoWhite, timeLogoWhite } from "../assets";
+//components
 import { Input, Button } from "../components";
 
-const premiumData = [
-  {
-    id: 1,
-    name: "Contact@logistics.com",
-    img: emailLogoWhite,
-    to: "mailto",
-  },
-  {
-    id: 2,
-    name: "(00) 112 365 489",
-    img: callLogoWhite,
-    to: "tel",
-  },
-  {
-    id: 3,
-    name: "Mon - Sat 9.00 - 20.00 Sunday Closed",
-    img: timeLogoWhite,
-    to: "",
-  },
-];
-
+//file-dataBase
 const clientsGet = [
   {
     id: 1,
@@ -58,26 +37,7 @@ const PremiumContact = () => {
           </li>
         ))}
       </ul>
-      {/* <ul className="flex items-center flex-wrap justify-center gap-x-[131px] mt-[40px] mb-3 mobileLg:gap-y-[40px]">
-        {premiumData.map((element) => {
-          return (
-            <div
-              key={element.id}
-              className="flex flex-col items-center justify-center gap-y-[11px] w-[158px]"
-            >
-              <span className="w-[63px] h-[63px] rounded-full bg-[#273270] flex items-center justify-center">
-                <img className="w-[35px] h-[35px]" src={element.img} />
-              </span>
-              <a
-                href={`${element.to}:${element.name}`}
-                className="text-[14px] font-krub font-medium text-white text-center hover:underline hover:underline-offset-4"
-              >
-                {element.name}
-              </a>
-            </div>
-          );
-        })}
-      </ul> */}
+
       <form className="flex items-center justify-center flex-col mt-6">
         <div className="flex flex-wrap gap-6 justify-center items-center gap-x-[28px] tabletLg:flex-col tabletLg:gap-0">
           <Input type="text" placeholder="Your name*" premium required={true} />{" "}

@@ -1,4 +1,4 @@
-import React from 'react'
+//images
 import {
   galery1,
   galery2,
@@ -7,8 +7,10 @@ import {
   galery5,
   galery6,
 } from "../assets";
+//components
 import { SubText } from '../components';
 
+//file-dataBase
 const countriesData = [
   { id: 1, name: "George", img: galery1 },
   { id: 2, name: "Kazakhstan", img: galery2 },
@@ -20,7 +22,7 @@ const countriesData = [
 function Gallery() {
   return (
     <div className='bg-[#091242] h-[80vh]  relative'>
-      <div className='myContainer flex justify-between w-full'>
+      <div className='myContainer flex justify-between w-full '>
       <div className='pt-8  max-w-[460px]'>
         <SubText title="Gallery" bgclr="#F3F3F3"/>
       <h1 className=" text-4xl text-white font-rubik font-bold maxSm:text-3xl">My Galeries</h1>
@@ -28,7 +30,7 @@ function Gallery() {
       </div>
       <div className='  flex h-[100%]  w-full'>
       <div className='rotate-90 w-full max-w-fit'>
-      <marquee className="h-[80vh]"  behavior="scroll" direction="left" scrollamount="5">
+      {/* <marquee className="h-[80vh]"  behavior="scroll" direction="left" scrollamount="5">
           {countriesData.map((item) => (
             <>
               <img
@@ -37,7 +39,7 @@ function Gallery() {
               />
             </>
           ))}
-        </marquee>
+        </marquee> */}
       </div>
         <div className='rotate-90 w-full max-w-fit'>
         <marquee className="h-[80vh]" behavior="scroll" direction="right" scrollamount="5">
@@ -45,7 +47,7 @@ function Gallery() {
             <>
               <img
                 src={item.img}
-                className="w-[200px] h-[250px] rotate-[-90deg] rounded-[10px] inline-block "
+                className="w-[400px] h-[350px] rotate-[-90deg]  inline-block "
               />
             </>
           ))}
@@ -57,7 +59,7 @@ function Gallery() {
             <>
               <img
                 src={item.img}
-                className="w-[200px] h-[250px] rotate-[-90deg] rounded-[10px]  inline-block  "
+                className="w-[400px] h-[350px] object-cover rotate-[-90deg]   inline-block  "
               />
               
             </>

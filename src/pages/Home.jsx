@@ -1,4 +1,6 @@
+//components
 import { CountriesSlider } from "../components";
+//sections
 import {
   Hero,
   About,
@@ -18,8 +20,8 @@ function Home() {
       <Advantages />
       <Certificates />
       <CountriesSlider />
-      <Gallery/>
       <Team />
+      <Gallery/>
       <Contact />
       <Location />
     </div>
