@@ -6,8 +6,11 @@ import { SubText, Button } from "../components";
 import video from "../assets/bg-video.mp4";
 //react-router-dom
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
+  const { t } = useTranslation();
+
   return (
     <div
       id="hero"
@@ -27,7 +30,7 @@ function Hero() {
         <Slide direction="left" duration={3500}>
           <SubText title="Trans Ekspress Logistics" bgclr="#043265" white />
           <h1 className="text-white text-5xl max-w-2xl font-bold font-rubik maxSm:text-4xl">
-            Together Faster
+            {t("title")}
           </h1>
           <p className="text-white max-w-lg font-regular font-rubik text-[16px] pt-4 ">
             We are ready to prove that we can deliver your cargo to any
