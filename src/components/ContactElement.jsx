@@ -1,10 +1,11 @@
+
 import { useTranslation } from "react-i18next";
 
 const ContactElement = ({ img, title, text, href }) => {
   const { t } = useTranslation();
   return (
     <div className="flex items-center gap-x-[14px] mobileSm:ml-[10%]">
-      <span className="w-[63px] h-[63px] bg-[#111C55] rounded-full flex items-center justify-center mobileMd:w-[50px] mobileMd:h-[50px]">
+      <span className="w-[63px] h-[63px] bg-[#091242] rounded-full flex items-center justify-center mobileMd:w-[50px] mobileMd:h-[50px]">
         <img
           src={img}
           className="w-[35px] h-[35px] mobileMd:w-[30px] mobileMd:h-[30px]"

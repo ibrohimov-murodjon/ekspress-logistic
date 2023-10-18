@@ -1,5 +1,8 @@
+//react-reveral for animtion
 import { Slide, Zoom } from "react-awesome-reveal";
+//components
 import { SubText, Card } from "../components";
+//images
 import Director from "../assets/director-photo.png";
 import { useTranslation } from "react-i18next";
 

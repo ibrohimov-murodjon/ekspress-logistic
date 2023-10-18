@@ -1,10 +1,14 @@
+//react-reveal for animtion
 import { Slide, Fade } from "react-awesome-reveal";
 import {useTranslation} from 'react-i18next'
+//components
 import { Card, SubText } from "../components";
+//images
 import TeamPhotoOne from "../assets/team_img_1.png";
 import TeamPhotoTwo from "../assets/team_img_2.png";
 import TeamPhotoThree from "../assets/team_img_3.png";
 
+//file dataBase
 const data = [
   {
     img: TeamPhotoOne,

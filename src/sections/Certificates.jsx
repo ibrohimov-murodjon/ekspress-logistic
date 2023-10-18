@@ -1,3 +1,7 @@
+
+//react
+import { useState } from 'react';
+//component
 // carusel
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -8,6 +12,7 @@ import { SubText } from "../components";
 //images
 import {Certificated,  Director, emailLogoWhite} from '../assets/index'
 
+//file-dataBase
 const certificatedData = [
   {
     id: 1,
@@ -101,7 +106,6 @@ function Certificates() {
             );
           })}
         </Carousel>
-        ;
       </div>
     </div>
   );

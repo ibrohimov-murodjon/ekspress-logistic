@@ -1,8 +1,10 @@
-import React from "react";
-import { callLogoWhite, emailLogoWhite, timeLogoWhite } from "../assets";
+//components
 import { Input, Button } from "../components";
+
 import { useTranslation } from "react-i18next";
 
+
+//file-dataBase
 const clientsGet = [
   {
     id: 1,

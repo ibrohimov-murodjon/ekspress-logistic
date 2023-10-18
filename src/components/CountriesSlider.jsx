@@ -1,4 +1,4 @@
-import React from "react";
+//react-reveral for animation
 import { Slide, Zoom } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
 //images
@@ -11,9 +11,11 @@ import {
   TajikistanFlag,
   TurkeyFlag,
 } from "../assets";
+//components
 import Button from "./Button";
 import SubText from "./SubText";
 
+//file-dataBase
 const countriesData = [
   { id: 1, name: "George", img: GeorgeFlag },
   { id: 2, name: "Kazakhstan", img: KazakhstanFlag },
