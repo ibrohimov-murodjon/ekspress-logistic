@@ -5,6 +5,7 @@ import {
   callLogoWhite,
   emailLogoNavbar,
 } from "../assets";
+import DropTopBtn from "../components/DropTopBtn";
 
 const navLinks = [
   {
@@ -27,8 +28,8 @@ const navLinks = [
 
 function Footer() {
   return (
-    <footer className=" bg-[#091242]">
-      <section className="myContainer py-[23px]">
+    <footer className=" bg-[#091242] ">
+      <section className="myContainer relative py-[23px]">
         <div className="flex items-end justify-between">
           <div className="space-x-4 items-center">
             {navLinks.map((link, index) => (
@@ -72,6 +73,7 @@ function Footer() {
           {/* </div> */}
           {/* <div className="w-full h-[2px] bg-[#D6D6D6]"></div> */}
         </div>
+        <DropTopBtn/>
       </section>
     </footer>
   );

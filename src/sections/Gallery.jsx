@@ -21,8 +21,8 @@ const countriesData = [
 ];
 function Gallery() {
   return (
-    <div className='bg-[#091242] h-[80vh]  relative'>
-      <div className='myContainer flex justify-between w-full '>
+    <div className='bg-[#091242] h-[80vh]  relative desktopSm:h-[100vh]' >
+      <div className='myContainer flex justify-between w-full desktopSm:flex-col  '>
       <div className='pt-8  max-w-[460px]'>
         <SubText title="Gallery" bgclr="#F3F3F3"/>
       <h1 className=" text-4xl text-white font-rubik font-bold maxSm:text-3xl">My Galeries</h1>
@@ -30,16 +30,6 @@ function Gallery() {
       </div>
       <div className='  flex h-[100%]  w-full'>
       <div className='rotate-90 w-full max-w-fit'>
-      {/* <marquee className="h-[80vh]"  behavior="scroll" direction="left" scrollamount="5">
-          {countriesData.map((item) => (
-            <>
-              <img
-                src={item.img}
-                className="w-[200px] h-[250px] rotate-[-90deg] inline-block  rounded-[10px]"
-              />
-            </>
-          ))}
-        </marquee> */}
       </div>
         <div className='rotate-90 w-full max-w-fit'>
         <marquee className="h-[80vh]" behavior="scroll" direction="right" scrollamount="5">
@@ -47,7 +37,7 @@ function Gallery() {
             <>
               <img
                 src={item.img}
-                className="w-[400px] h-[350px] rotate-[-90deg]  inline-block "
+                className="w-[400px] h-[350px] rotate-[-90deg]  inline-block desktopMd:w-[300px] desktopMd:h-[250px] "
               />
             </>
           ))}
@@ -59,7 +49,7 @@ function Gallery() {
             <>
               <img
                 src={item.img}
-                className="w-[400px] h-[350px] object-cover rotate-[-90deg]   inline-block  "
+                className="w-[400px] h-[350px] object-cover rotate-[-90deg]   inline-block desktopMd:w-[300px] desktopMd:h-[250px]  "
               />
               
             </>
