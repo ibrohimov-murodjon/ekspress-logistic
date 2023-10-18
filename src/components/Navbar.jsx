@@ -1,35 +1,37 @@
 import { Slide } from "react-awesome-reveal";
 import { instaLogo, tgLogo, callLogoWhite, emailLogoNavbar } from "../assets";
 import { Language } from "./";
+import { useTranslation } from "react-i18next";
 
 const navLinks = [
   {
-    name: "Home",
+    name: "home",
     to: "",
   },
   {
-    name: "About",
+    name: "about",
     to: "about",
   },
   {
-    name: "Why Us?",
+    name: "advantages",
     to: "advantages",
   },
   {
-    name: "Our Team",
+    name: "our_team",
     to: "team",
   },
   {
-    name: "Contact",
+    name: "contact",
     to: "contact",
   },
 ];
 
 function Navbar() {
+  const { t } = useTranslation();
   return (
-    <nav className="navbar sticky-header bg-white bg-opacity-30 backdrop-filter backdrop-blur-md pt-3">
+    <nav className="navbar sticky-header bg-white bg-opacity-30 backdrop-filter backdrop-blur-md pt-3 tabletLgMd:pt-0">
       <div className="myContainer">
-        <div className="flex items-center justify-between pt-[18px] pb-[18px] mobileLg:flex-col maxSm:justify-center mobileLg:pt-[16px]">
+        <div className="flex items-center justify-between pt-[18px] pb-[18px] flex-wrap tabletLgMd:justify-center tabletLgMd:pt-[25px] mobileLg:flex-col maxSm:justify-center mobileLg:pt-[16px]">
           <Slide direction="down" duration={2500} className="maxSm:hidden">
             <div className="flex space-x-4  items-center">
               {navLinks.map((link, index) => (
@@ -38,14 +40,14 @@ function Navbar() {
                     href={`#${link.to}`}
                     className="nav relative text-white font-krub font-bold"
                   >
-                    {link.name}
+                    {t(link.name)}
                   </a>
                   <div className="w-[1px] h-[19px] [&:not(:last-child)]:bg-darkGray"></div>
                 </>
               ))}
             </div>
           </Slide>
-          <div className="flex gap-4 items-center maxSm:w-full maxSm:justify-between ">
+          <div className="flex gap-4 items-center maxSm:w-full maxSm:justify-between tabletLgMd:mt-4 maxSm:mt-0">
             <Slide direction="down" duration={2500}>
               <div className="flex items-center gap-x-6 ">
                 <a

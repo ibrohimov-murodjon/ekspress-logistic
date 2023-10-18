@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   galery1,
   galery2,
@@ -7,7 +7,8 @@ import {
   galery5,
   galery6,
 } from "../assets";
-import { SubText } from '../components';
+import { SubText } from "../components";
+import { useTranslation } from "react-i18next";
 
 const countriesData = [
   { id: 1, name: "George", img: galery1 },
@@ -18,56 +19,78 @@ const countriesData = [
   { id: 6, name: "Germany", img: galery6 },
 ];
 function Gallery() {
+  const { t } = useTranslation();
   return (
-    <div className='bg-[#091242] h-[80vh]  relative'>
-      <div className='myContainer flex justify-between w-full'>
-      <div className='pt-8  max-w-[460px]'>
-        <SubText title="Gallery" bgclr="#F3F3F3"/>
-      <h1 className=" text-4xl text-white font-rubik font-bold maxSm:text-3xl">My Galeries</h1>
-      <p className="max-w-[451px] text-white font-krub text-[16px] font-medium leading-8 desktop:text-base desktop:max-w-[531px] desktopSm:text-center desktopSm:max-w-[100%] desktopSm:pt-8 desktopSm:text-[18px] maxSm:text-[15px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis illum, est tempore aspernatur ratione libero ipsa impedit. Molestiae cumque eveniet, pariatur dolore nihil officia accusantium quasi, nemo earum esse similique.</p>
-      </div>
-      <div className='  flex h-[100%]  w-full'>
-      <div className='rotate-90 w-full max-w-fit'>
-      <marquee className="h-[80vh]"  behavior="scroll" direction="left" scrollamount="5">
-          {countriesData.map((item) => (
-            <>
-              <img
-                src={item.img}
-                className="w-[200px] h-[250px] rotate-[-90deg] inline-block  rounded-[10px]"
-              />
-            </>
-          ))}
-        </marquee>
-      </div>
-        <div className='rotate-90 w-full max-w-fit'>
-        <marquee className="h-[80vh]" behavior="scroll" direction="right" scrollamount="5">
-          {countriesData.map((item) => (
-            <>
-              <img
-                src={item.img}
-                className="w-[200px] h-[250px] rotate-[-90deg] rounded-[10px] inline-block "
-              />
-            </>
-          ))}
-        </marquee>
+    <div className="bg-[#091242] h-[80vh]  relative pt-[120px]">
+      <div className="myContainer flex justify-between w-full">
+        <div className=" max-w-[460px]">
+          <SubText title="gallery" bgclr="#F3F3F3" />
+          <h1 className=" text-4xl text-white font-rubik font-bold maxSm:text-3xl">
+            {t("our_gallery")}
+          </h1>
+          <p className="max-w-[451px] text-white font-krub text-[16px] font-medium leading-8 desktop:text-base desktop:max-w-[531px] desktopSm:text-center desktopSm:max-w-[100%] desktopSm:pt-8 desktopSm:text-[18px] maxSm:text-[15px]">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+            illum, est tempore aspernatur ratione libero ipsa impedit. Molestiae
+            cumque eveniet, pariatur dolore nihil officia accusantium quasi,
+            nemo earum esse similique.
+          </p>
         </div>
-        <div className='rotate-90 w-full max-w-fit'>
-      <marquee className="h-[80vh]"  behavior="scroll" direction="left"  scrollamount="5">
-          {countriesData.map((item) => (
-            <>
-              <img
-                src={item.img}
-                className="w-[200px] h-[250px] rotate-[-90deg] rounded-[10px]  inline-block  "
-              />
-              
-            </>
-          ))}
-        </marquee>
+        <div className="  flex h-[100%]  w-full">
+          <div className="rotate-90 w-full max-w-fit">
+            <marquee
+              className="h-[80vh]"
+              behavior="scroll"
+              direction="left"
+              scrollamount="5"
+            >
+              {countriesData.map((item) => (
+                <>
+                  <img
+                    src={item.img}
+                    className="w-[200px] h-[250px] rotate-[-90deg] inline-block  rounded-[10px]"
+                  />
+                </>
+              ))}
+            </marquee>
+          </div>
+          <div className="rotate-90 w-full max-w-fit">
+            <marquee
+              className="h-[80vh]"
+              behavior="scroll"
+              direction="right"
+              scrollamount="5"
+            >
+              {countriesData.map((item) => (
+                <>
+                  <img
+                    src={item.img}
+                    className="w-[200px] h-[250px] rotate-[-90deg] rounded-[10px] inline-block "
+                  />
+                </>
+              ))}
+            </marquee>
+          </div>
+          <div className="rotate-90 w-full max-w-fit">
+            <marquee
+              className="h-[80vh]"
+              behavior="scroll"
+              direction="left"
+              scrollamount="5"
+            >
+              {countriesData.map((item) => (
+                <>
+                  <img
+                    src={item.img}
+                    className="w-[200px] h-[250px] rotate-[-90deg] rounded-[10px]  inline-block  "
+                  />
+                </>
+              ))}
+            </marquee>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
-    </div>
-  )
+  );
 }
 
-export default Gallery
+export default Gallery;

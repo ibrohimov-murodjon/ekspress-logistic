@@ -10,7 +10,7 @@
 
 @layer utilities {
   .nav::after {
-    @apply content-[''] bg-white h-[3px] w-[0%] left-0 -bottom-[25px] rounded-xl absolute duration-300 mobileLg:-bottom-[5px];
+    @apply content-[''] bg-white h-[3px] w-[0%] left-0 -bottom-[25px] rounded-xl absolute duration-300 tabletLgMd:-bottom-[5px];
   }
   .nav:hover::after {
     @apply w-[100%];
@@ -28,7 +28,7 @@
 /* rubik-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url("./assets/fonts/rubik-v28-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */

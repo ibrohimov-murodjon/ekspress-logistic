@@ -1,40 +1,52 @@
+import React, { useState } from "react";
 import { Slide, Fade } from "react-awesome-reveal";
 import { SubText, Button } from "../components";
 import video from "../assets/bg-video.mp4";
+import { bgHero } from "../assets";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 function Hero() {
   const { t } = useTranslation();
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
+  const handleVideoLoad = () => {
+    setVideoLoaded(true);
+  };
 
   return (
-    <div
-      className="relative flex flex-col 
-        justify-center h-[840px] overflow-hidden mt-[-70px] mobileLg:mt-[-110px]"
-    >
+    <div className="relative flex flex-col justify-center h-[840px] overflow-hidden mt-[-70px] tabletLgMd:mt-[-100px]">
       <div className="absolute w-full h-[840px] z-[10] bg-bgVideo"></div>
+      <img
+        src={bgHero}
+        alt="Background Image"
+        className={`absolute z-0 w-auto min-w-full min-h-full max-w-none ${
+          videoLoaded ? "opacity-0" : "opacity-100"
+        }`}
+      />
       <video
         src={video}
         autoPlay={true}
         loop
         muted
-        className="absolute z-0 w-auto 
-            min-w-full min-h-full max-w-none "
+        className={`absolute z-0 w-auto min-w-full min-h-full max-w-none ${
+          videoLoaded ? "opacity-100" : "opacity-0"
+        }`}
+        onLoadedData={handleVideoLoad}
       ></video>
       <div className="z-[99] myContainer">
         <Slide direction="left" duration={3500}>
-          <SubText title="Trans Ekspress Logistics" bgclr="#043265" white />
+          <SubText title="hero_text" bgclr="#043265" white />
           <h1 className="text-white text-5xl max-w-2xl font-bold font-rubik maxSm:text-4xl">
-            {t("title")}
+            {t("hero_title")}
           </h1>
           <p className="text-white max-w-lg font-regular font-rubik text-[16px] pt-4 ">
-            We are ready to prove that we can deliver your cargo to any
-            destiantion safely and quickly
+            {t("hero_desc")}
           </p>
         </Slide>
         <Fade duration={3500}>
           <Link to="premium">
-            <Button title="Premium Class" path={"/premium"} />
+            <Button title="premium_class" path={"/premium"} />
           </Link>
         </Fade>
       </div>

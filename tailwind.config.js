@@ -21,6 +21,7 @@ module.exports = {
         desktopLg: { max: "1240px" },
         desktop: { max: "1161px" },
         tabletLgMax: { max: "987px" },
+        tabletLgMd: { max: "950px" },
         tabletLg: { max: "940px" },
         desktopSm: { max: "910px" },
         desktopMid: { max: "880px" },

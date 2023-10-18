@@ -11,26 +11,27 @@ import {
   newLogo,
 } from "../assets";
 import { ContactElement } from "../components";
+import { useTranslation } from "react-i18next";
 
 const navLinks = [
   {
-    name: "Home",
+    name: "home",
     to: "",
   },
   {
-    name: "About",
+    name: "about",
     to: "about",
   },
   {
-    name: "Why Us?",
+    name: "advantages",
     to: "advantages",
   },
   {
-    name: "Our Team",
+    name: "our_team",
     to: "team",
   },
   {
-    name: "Contact",
+    name: "contact",
     to: "contact",
   },
 ];
@@ -39,29 +40,29 @@ const contactData = [
   {
     id: 1,
     img: emailLogo,
-    title: "Email",
-    text: "t.eks.logistic@gmail.com",
+    title: "email_text",
+    text: "email",
     href: "mailto",
   },
   {
     id: 2,
     img: callLogo,
-    title: "Call Us",
-    text: "+998770016060",
+    title: "call_us",
+    text: "phone",
     href: "tel",
   },
   {
     id: 3,
     img: timeLogo,
-    title: "Mon - Sat 9.00 - 18.00",
-    text: "Sunday Closed",
+    title: "opening_day",
+    text: "closing_day",
   },
 ];
 
 function Header() {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
-
+  const { t } = useTranslation();
   const handleMenu = (name) => {
     setActive(name);
     setToggle(false);
@@ -116,7 +117,7 @@ function Header() {
                   } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                   onClick={() => handleMenu(nav.name)}
                 >
-                  <a href={`#${nav.to}`}>{nav.name}</a>
+                  <a href={`#${nav.to}`}>{t(nav.name)}</a>
                 </li>
               ))}
             </ul>

@@ -2,10 +2,11 @@ import { Slide, Fade } from "react-awesome-reveal";
 import { SubText } from "../components";
 import locationImg from "../assets/location.png";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function Location() {
   const [location, setLocation] = useState("tashkent");
-
+  const { t } = useTranslation();
   const Locations = {
     tashkent: (
       <iframe
@@ -39,9 +40,9 @@ function Location() {
           duration={2000}
           className="flex flex-col items-center justify-center"
         >
-          <SubText title="Our Location" bgclr="#F3F3F3" />
+          <SubText title="our_location" bgclr="#F3F3F3" />
           <h1 className="text-4xl text-white font-rubik font-bold">
-            We are here
+            {t("we_are_here")}
           </h1>
         </Slide>
         <Fade duration={3000}>
@@ -57,7 +58,7 @@ function Location() {
                   onClick={() => setLocation("namangan")}
                 >
                   <img src={locationImg} className="w-[25px]" alt="" />
-                  Namangan
+                  {t("namangan")}
                 </button>
               </li>
               <li className="mr-2 ">
@@ -70,7 +71,7 @@ function Location() {
                   onClick={() => setLocation("tashkent")}
                 >
                   <img src={locationImg} className="w-[25px]" alt="" />
-                  Tashkent
+                  {t("tashkent")}
                 </button>
               </li>
             </ul>

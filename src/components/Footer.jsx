@@ -5,46 +5,60 @@ import {
   callLogoWhite,
   emailLogoNavbar,
 } from "../assets";
+import { useTranslation } from "react-i18next";
 
 const navLinks = [
   {
-    name: "About",
+    name: "about",
     to: "about",
   },
   {
-    name: "Why Us?",
+    name: "advantages",
     to: "advantages",
   },
   {
-    name: "Our Team",
+    name: "our_team",
     to: "team",
   },
   {
-    name: "Contact",
+    name: "contact",
     to: "contact",
   },
 ];
 
 function Footer() {
+  const { t } = useTranslation();
   return (
-    <footer className=" bg-[#091242]">
-      <section className="myContainer py-[23px]">
-        <div className="flex items-end justify-between">
-          <div className="space-x-4 items-center">
-            {navLinks.map((link, index) => (
-              <>
-                <a
-                  href={`#${link.to}`}
-                  className="footer__link relative text-white font-krub font-bold"
-                >
-                  {link.name}
-                </a>
-              </>
-            ))}
+    <footer className="pt-[170px] bg-[#091242] tabletLgMax:pt-[140px] desktopSm:pt-[0]">
+      <section className="myContainer relative flex justify-center flex-col py-[23px]">
+        <img
+          className="w-[150px] mx-auto absolute left-[545px] bottom-[50px] tabletLgMax:left-[445px] desktopSm:relative desktopSm:left-0 desktopSm:bottom-0 mobileLg:w-[120px]"
+          src={newLogo}
+          alt=""
+        />
+        <div className="flex items-end justify-between desktopSm:flex-col desktopSm:items-center desktopSm:justify-center desktopSm:pt-5">
+          <div className="flex items-center mobileLg:justify-center">
+            <div className="space-x-4 items-center desktopSm:space-x-10 mobileLg:space-x-3 mobileLg:flex mobileLg:flex-wrap mobileLg:justify-center">
+              {navLinks.map((link, index) => (
+                <>
+                  <a
+                    href={`#${link.to}`}
+                    className="footer__link relative text-white font-krub font-bold mobileLg:mb-2"
+                  >
+                    {t(link.name)}
+                  </a>
+                </>
+              ))}
+            </div>
+            <a
+              href="https://t.me/heismurad"
+              className="absolute left-[335px] bottom-[23px] text-white underline underline-offset-4 opacity-[0.8] font-krub font-regular ml-[220px] hover:opacity-[1] tabletLgMax:left-[235px] desktopSm:hidden"
+              target={"_blank"}
+            >
+              {t("created_by")}
+            </a>
           </div>
-          {/* <div className="flex gap-4 items-center maxSm:w-full maxSm:justify-between "> */}
-          <img className="w-[150px]" src={newLogo} alt="" />
-          <div className="flex items-center gap-x-6 ">
+          <div className="flex items-center space-x-6 desktopSm:mt-4 desktopSm:space-x-10 mobileLg:space-x-3">
             <a
               href="https://www.instagram.com/t.eks.logistic/"
               target={"_blank"}
@@ -69,9 +83,15 @@ function Footer() {
               />
             </a>
           </div>
-          {/* </div> */}
-          {/* <div className="w-full h-[2px] bg-[#D6D6D6]"></div> */}
+          <a
+            href="https://t.me/heismurad"
+            className="hidden text-white underline underline-offset-4 opacity-[0.8] font-krub font-regular hover:opacity-[1] desktopSm:flex desktopSm:mt-4"
+            target={"_blank"}
+          >
+            {t("created_by")}
+          </a>
         </div>
+        {/* <div className="w-full h-[2px] bg-[#D6D6D6]"></div> */}
       </section>
     </footer>
   );
