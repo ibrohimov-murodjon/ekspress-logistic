@@ -29,7 +29,7 @@ function About() {
             name="director_name"
             role="director"
             tglink="https://t.me/RSalayev"
-            number="+998902180095"
+            number={false}
           />
         </Slide>
         <div className="w-[1px] h-[414px] bg-[#D6D6D6] ml-[30px] desktopSm:hidden"></div>

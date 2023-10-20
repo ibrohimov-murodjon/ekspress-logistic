@@ -3,13 +3,21 @@ import { Slide, Zoom } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
 //images
 import {
+  BelarusFlag,
+  FranceFlag,
   GeorgeFlag,
   GermayFlag,
+  GreeceFlag,
+  ItalyFlag,
   KazakhstanFlag,
   KyrgyzstanFlag,
+  LatviaFlag,
   PartnersTextImg,
-  TajikistanFlag,
+  PortugalFlag,
+  SpainFlag,
+  ThailandFlag,
   TurkeyFlag,
+  VietnamFlag,
 } from "../assets";
 //components
 import Button from "./Button";
@@ -19,14 +27,30 @@ import SubText from "./SubText";
 const countriesData = [
   { id: 1, name: "George", img: GeorgeFlag },
   { id: 2, name: "Kazakhstan", img: KazakhstanFlag },
-  { id: 3, name: "Kyrgyzstan", img: KyrgyzstanFlag },
-  { id: 4, name: "Tajikistan", img: TajikistanFlag },
+  { id: 3, name: "Belarus", img: BelarusFlag },
+  { id: 4, name: "Latvia", img: LatviaFlag },
   { id: 5, name: "Turkey", img: TurkeyFlag },
   { id: 6, name: "Germany", img: GermayFlag },
-  { id: 7, name: "Kyrgyzstan", img: KyrgyzstanFlag },
-  { id: 8, name: "Turkey", img: TurkeyFlag },
-  { id: 9, name: "Kyrgyzstan", img: KyrgyzstanFlag },
-  { id: 10, name: "Germany", img: GermayFlag },
+  { id: 7, name: "Italy", img: ItalyFlag },
+  { id: 8, name: "Spain", img: SpainFlag },
+  { id: 9, name: "France", img: FranceFlag },
+  { id: 10, name: "Greece", img: GreeceFlag },
+  { id: 11, name: "Portugal", img: PortugalFlag },
+  { id: 12, name: "Thailand", img: ThailandFlag },
+  { id: 13, name: "Vietnam", img: VietnamFlag },
+  { id: 14, name: "George", img: GeorgeFlag },
+  { id: 15, name: "Kazakhstan", img: KazakhstanFlag },
+  { id: 16, name: "Belarus", img: BelarusFlag },
+  { id: 17, name: "Latvia", img: LatviaFlag },
+  { id: 18, name: "Turkey", img: TurkeyFlag },
+  { id: 19, name: "Germany", img: GermayFlag },
+  { id: 20, name: "Italy", img: ItalyFlag },
+  { id: 21, name: "Spain", img: SpainFlag },
+  { id: 22, name: "France", img: FranceFlag },
+  { id: 23, name: "Greece", img: GreeceFlag },
+  { id: 24, name: "Portugal", img: PortugalFlag },
+  { id: 25, name: "Thailand", img: ThailandFlag },
+  { id: 26, name: "Vietnam", img: VietnamFlag }
 ];
 
 const CountriesSlider = () => {
