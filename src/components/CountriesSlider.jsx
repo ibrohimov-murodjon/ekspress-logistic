@@ -1,5 +1,6 @@
 //react-reveral for animation
 import { Slide, Zoom } from "react-awesome-reveal";
+import { useTranslation } from "react-i18next";
 //images
 import {
   GeorgeFlag,
@@ -29,27 +30,28 @@ const countriesData = [
 ];
 
 const CountriesSlider = () => {
+  const { t } = useTranslation();
   return (
     <div className="h-[400px] countries relative flex flex-col items-center">
       <div className="absolute w-full h-[400px] z-[0] bg-bgVideo"></div>
       <Slide direction="down">
         <div className="pt-[30px] z-[10]">
-          <SubText title="Our Partners" bgclr="#f3f3f3" />
+          <SubText title="our_partners" bgclr="#f3f3f3" />
         </div>
         <div className="myContainer z-[10] w-full items-center flex font-medium text-[35px] text-white leading-[47px] font-rubik maxSm:text-[24px] maxSm:justify-center">
-          <span className="mobileLg:hidden">M</span>
+          <span className="mobileLg:hidden">{t("m_char")}</span>
           <img src={PartnersTextImg} className="mobileLg:hidden" />
           <span className="mobileLg:hidden">
-            st of our trusted customers are from
+            {t("our_partners_desc_short")}
           </span>
           <span className="hidden mobileLg:flex max-w-[450px] text-center">
-            Most of our trusted customers are from
+            {t("our_partners_desc")}
           </span>
         </div>
       </Slide>
       <Zoom>
         <a href="#contact">
-          <Button title="Be Our Partner" path={"/"} />
+          <Button title="be_partner" path={"/"} />
         </a>
       </Zoom>
       <div className="flex items-center w-full absolute bottom-0 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md backdrop-opacity-10 text-white font-bold font-rubik  text-[40px] maxSm:text-[30px]">

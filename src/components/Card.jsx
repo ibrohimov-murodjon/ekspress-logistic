@@ -1,8 +1,12 @@
 //images
 import tgLogo from "../assets/tg_logo.svg";
 import phoneLogo from "../assets/call_logo.svg";
+import { useTranslation } from "react-i18next";
+import { useLanguage } from "../context/LanguageContext";
 
 function Card({ img, name, role, bgDark, tglink, number, borderNone }) {
+  const { t } = useTranslation();
+  const { language } = useLanguage();
   return (
     <div
       className={`relative max-w-sm  border border-gray-200 rounded-lg shadow ${
@@ -20,13 +24,15 @@ function Card({ img, name, role, bgDark, tglink, number, borderNone }) {
           className="text-xl font-rubik font-medium maxSm:text-base"
           style={{ color: `${bgDark ? "#fff" : "#141414"}` }}
         >
-          {name}
+          {t(name)}
         </h5>
         <p
-          className="text-base font-krub font-medium maxSm:text-sm"
+          className={`text-base ${
+            language === "ru" ? "font-rubik font-regular" : "font-krub"
+          } font-medium maxSm:text-sm`}
           style={{ color: `${bgDark ? "#fff" : "#141414"}` }}
         >
-          {role}
+          {t(role)}
         </p>
       </div>
       <div className="flex items-center justify-center gap-[25px] bg-gradient-to-r  from-[#f7971e] to-[#ffd200] w-[104px] h-[61px] absolute bottom-16 right-0">

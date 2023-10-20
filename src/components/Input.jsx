@@ -1,4 +1,4 @@
-const Input = ({ type, placeholder, required, premium }) => {
+const Input = ({ type, placeholder, required, premium, name }) => {
   return (
     <div
       className={`w-[365px] mobileMd:flex mobileMd:flex-col mobileMd:items-center desktopLg:w-[450px] mobileLg:w-[350px] ${
@@ -10,6 +10,7 @@ const Input = ({ type, placeholder, required, premium }) => {
         placeholder={placeholder}
         type={type}
         required={required}
+        name={name}
       />
     </div>
   );

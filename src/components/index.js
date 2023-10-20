@@ -10,3 +10,4 @@ export { default as ContactElement } from "./ContactElement";
 export { default as Input } from "./Input";
 export { default as PremiumContact } from "./PremiumContact";
 export { default as Language } from "./Language";
+export { default as Modal } from "./Modal";

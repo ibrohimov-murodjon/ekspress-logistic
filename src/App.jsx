@@ -6,6 +6,7 @@ import HomeLayout from "./layout/HomeLayout";
 import { Home, Premium, Error } from "./pages";
 //components
 import { ErrorElement } from "./components";
+import { LanguageProvider } from "./context/LanguageContext";
 
 export default function App() {
   const routes = createBrowserRouter([
@@ -28,8 +29,10 @@ export default function App() {
     },
   ]);
   return (
-    <>
-      <RouterProvider router={routes} />
-    </>
+    <LanguageProvider>
+      <>
+        <RouterProvider router={routes} />
+      </>
+    </LanguageProvider>
   );
 }

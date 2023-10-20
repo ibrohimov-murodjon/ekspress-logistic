@@ -9,33 +9,34 @@ import { SubText } from "../components";
 import arrowLeft from "../assets/arrow-left.png";
 //flowbite library
 import { Card } from "flowbite-react";
+import { useTranslation } from "react-i18next";
 
 //file-dataBase
 const data = [
   {
     id: 1,
-    title: "Reliability",
-    desc: "Our warranty secures timely inventory arrival, providing peace of mind. We surpass expectations, ensuring your agreed-upon schedule is met. Our steadfast dedication ensures your satisfaction and business continuity.",
+    title: "reliability",
+    desc: "reliability_desc",
   },
   {
     id: 2,
-    title: "Affordable Prices",
-    desc: "Experience unmatched value with our budget-friendly prices. We redefine market affordability, ensuring quality without compromise. Your satisfaction meets unbeatable prices at our destination.",
+    title: "affordable_price",
+    desc: "affordable_price_desc",
   },
   {
     id: 3,
-    title: "Expert Support",
-    desc: "Always ready to assist you. Count on our round-the-clock experts for immediate assistance and invaluable advice. Your needs are our priority, ensuring you have constant support whenever required.",
+    title: "expert_support",
+    desc: "expert_support_desc",
   },
   {
     id: 4,
-    title: "Transportation management",
-    desc: "Our dedicated approach ensures seamless transport from origin to destination with strategic route optimization. Trust us for end-to-end support in navigating logistics for a successful distribution process.",
+    title: "transportation_management",
+    desc: "transportation_management_desc",
   },
   {
     id: 5,
-    title: "Responsible Drivers",
-    desc: "Rely on us for a team of trustworthy, educated, and expert drivers, ensuring responsible and secure transportation. Our dedicated workforce prioritizes safety, reliability, and professionalism in every journey.",
+    title: "responsible_drivers",
+    desc: "responsible_drivers_desc",
   },
 ];
 
@@ -60,13 +61,14 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
 };
 
 function Advantages() {
+  const { t } = useTranslation();
   return (
     <div className="pt-[120px] pb-[78px] bg-[#091242]" id="advantages">
       <div className="myContainer">
         <Slide direction="left" duration={1500}>
-          <SubText bgclr="#F3F3F3" title="Why us?" />
+          <SubText bgclr="#F3F3F3" title="advantages" />
           <h1 className="text-4xl font-rubik font-bold text-white max-w-[300px] maxSm:text-3xl">
-            Our Comperetive Advantages
+            {t("advantages_text")}
           </h1>
         </Slide>
         <div className="relative mt-6 ">
@@ -135,10 +137,12 @@ function Advantages() {
                     <span className="font-rubik">0{item.id}</span>
                     <div className="w-[2px] h-[60px] bg-amber-300 rotate-[15deg]"></div>
                     <h5 className="text-2xl font-rubik tracking-wider text-white">
-                      {item.title}
+                      {t(item.title)}
                     </h5>
                   </div>
-                  <p className="font-normal font-rubik text-white">{item.desc}</p>
+                  <p className="font-normal font-rubik text-white">
+                    {t(item.desc)}
+                  </p>
                 </Card>
               ))}
             </Carousel>

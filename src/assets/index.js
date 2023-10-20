@@ -23,6 +23,7 @@ export { default as emailLogo } from "./email.png";
 export { default as instaLogo } from "./instagram_logo.svg";
 export { default as tgLogo } from "./telegram__logo.svg";
 export { default as emailLogoNavbar } from "./email-logo-navbar.svg";
+export { default as bgHero } from "./bg-hero.jpg";
 export { default as galery1 } from "./galery1.png";
 export { default as galery2 } from "./galery2.png";
 export { default as galery3 } from "./galery3.png";
