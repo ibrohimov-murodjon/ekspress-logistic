@@ -13,7 +13,7 @@ function Premium() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="premiumBac select-none w-full mt-[-80px] pt-[162px]">
+      <div className="premiumBac select-none w-full mt-[-80px] pt-[162px] maxSm:h-[100%]">
         <div className="myContainer pb-[87px]">
           <SubText title="premium" bgclr="#03244b" white />
           <ul className="flex gap-x-3 mb-8">
@@ -37,7 +37,7 @@ function Premium() {
       <div className="bg-[#111C55]">
         <PremiumContact />
       </div>
-      <DropTopBtn />
+      {/* <DropTopBtn /> */}
     </>
   );
 }
