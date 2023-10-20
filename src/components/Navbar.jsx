@@ -1,12 +1,10 @@
-
-//react
-import { useState } from "react";
 //react-reveral for animtion
 import { Slide } from "react-awesome-reveal";
 //images
 import { instaLogo, tgLogo, callLogoWhite, emailLogoNavbar } from "../assets";
 import { Language } from "./";
 import { useTranslation } from "react-i18next";
+import { useLanguage } from "../context/LanguageContext";
 
 const navLinks = [
   {
@@ -31,8 +29,11 @@ const navLinks = [
   },
 ];
 
+// const language = localStorage.getItem("i18nextLng");
+
 function Navbar() {
   const { t } = useTranslation();
+  const { language } = useLanguage();
   return (
     <nav className="navbar sticky-header bg-white bg-opacity-30 backdrop-filter backdrop-blur-md pt-3 tabletLgMd:pt-0">
       <div className="myContainer">
@@ -43,7 +44,11 @@ function Navbar() {
                 <>
                   <a
                     href={`#${link.to}`}
-                    className="nav relative text-white font-krub font-bold"
+                    className={`nav relative text-white ${
+                      language === "ru"
+                        ? "font-rubik font-regular"
+                        : "font-krub"
+                    } font-bold`}
                   >
                     {t(link.name)}
                   </a>
@@ -70,10 +75,18 @@ function Navbar() {
                 </a>
 
                 <a href="tel:+998770016060" target={"_blank"}>
-                  <img src={callLogoWhite} alt="telegram logo" className="w-[32px]" />
+                  <img
+                    src={callLogoWhite}
+                    alt="telegram logo"
+                    className="w-[32px]"
+                  />
                 </a>
                 <a href="mailto:t.eks.logistic@gmail.com" target={"_blank"}>
-                  <img src={emailLogoNavbar} alt="telegram logo" className="w-[32px]" />
+                  <img
+                    src={emailLogoNavbar}
+                    alt="telegram logo"
+                    className="w-[32px]"
+                  />
                 </a>
               </div>
             </Slide>

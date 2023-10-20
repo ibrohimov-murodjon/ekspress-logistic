@@ -6,6 +6,7 @@ import {
   emailLogoNavbar,
 } from "../assets";
 import { useTranslation } from "react-i18next";
+import { useLanguage } from "../context/LanguageContext";
 
 const navLinks = [
   {
@@ -28,6 +29,7 @@ const navLinks = [
 
 function Footer() {
   const { t } = useTranslation();
+  const { language } = useLanguage();
   return (
     <footer className="pt-[170px] bg-[#091242] tabletLgMax:pt-[140px] desktopSm:pt-[0]">
       <section className="myContainer relative flex justify-center flex-col py-[23px]">
@@ -43,7 +45,9 @@ function Footer() {
                 <>
                   <a
                     href={`#${link.to}`}
-                    className="footer__link relative text-white font-krub font-bold mobileLg:mb-2"
+                    className={`footer__link relative text-white ${
+                      language === "ru" ? "font-rubik font-regular" : "font-krub"
+                    } font-bold mobileLg:mb-2`}
                   >
                     {t(link.name)}
                   </a>
@@ -52,7 +56,9 @@ function Footer() {
             </div>
             <a
               href="https://t.me/heismurad"
-              className="absolute left-[335px] bottom-[23px] text-white underline underline-offset-4 opacity-[0.8] font-krub font-regular ml-[220px] hover:opacity-[1] tabletLgMax:left-[235px] desktopSm:hidden"
+              className={`absolute left-[335px] bottom-[23px] text-white underline underline-offset-4 opacity-[0.8] ${
+                language === "ru" ? "font-rubik font-regular" : "font-krub"
+              } font-regular ml-[220px] hover:opacity-[1] tabletLgMax:left-[235px] desktopSm:hidden`}
               target={"_blank"}
             >
               {t("created_by")}
@@ -85,7 +91,9 @@ function Footer() {
           </div>
           <a
             href="https://t.me/heismurad"
-            className="hidden text-white underline underline-offset-4 opacity-[0.8] font-krub font-regular hover:opacity-[1] desktopSm:flex desktopSm:mt-4"
+            className={`hidden text-white underline underline-offset-4 opacity-[0.8] ${
+              language === "ru" ? "font-rubik font-regular" : "font-krub"
+            } font-regular hover:opacity-[1] desktopSm:flex desktopSm:mt-4`}
             target={"_blank"}
           >
             {t("created_by")}

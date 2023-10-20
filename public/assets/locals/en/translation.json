@@ -14,7 +14,7 @@
   "advantages": "Why Us?",
   "our_team": "Our Team",
   "contact": "Contact",
-  "about_us": "Trans ekpress logistic is an international logistics company headquartered in Namangan, Uzbekistan. Despite the fact that the company started its activity only 5 years ago, it managed to have its loyal customers in more than 20 countries. We are currently providing fast and quality service to all European and Asian countries in any situation. But this is not our limit. Your location is not important to our company. We can deliver your goods to any place you want at any time. Your trust is our strongest weapon. To achieve this, we ensure that our best drivers and experts are always in touch and offer you the best and the most affordable prices.",
+  "about_us": "Trans ekpress logistic - is an international logistics company headquartered in Namangan, Uzbekistan. Despite the fact that the company started its activity only 5 years ago, it managed to have its loyal customers in more than 20 countries. We are currently providing fast and quality service to all European and Asian countries in any situation. But this is not our limit. Your location is not important to our company. We can deliver your goods to any place you want at any time. Your trust is our strongest weapon. To achieve this, we ensure that our best drivers and experts are always in touch and offer you the best and the most affordable prices.",
   "director_name": "Rasul Saloyev",
   "director": "Director",
   "advantages_text": "Our Comperetive Advantages",
@@ -63,5 +63,8 @@
   "extra_advices":"Extra advices",
   "individual_attention":"Individual attention",
   "cheapest_prices":"Cheapest prices",
-  "created_by":"Created by: Murad"
+  "created_by":"Created by: Murad",
+  "contact_form":"Thank you for your response! We will get back to you soon...",
+  "premium_form":"Congratulations,you are now our Premium Class client.",
+  "thanks_text":"Thanks so much !"
 }

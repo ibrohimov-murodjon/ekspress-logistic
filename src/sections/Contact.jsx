@@ -1,3 +1,4 @@
+import { useState, useRef, useEffect } from "react";
 //react-reveal for animation
 import { Slide, Fade } from "react-awesome-reveal";
 //images
@@ -5,7 +6,9 @@ import { emailLogoWhite, callLogoWhite, timeLogoWhite } from "../assets/index";
 //components
 import { Button, ContactElement, Input, SubText } from "../components";
 import { useTranslation } from "react-i18next";
-
+import emailjs from "@emailjs/browser";
+import Modal from "../components/Modal";
+import { useLanguage } from "../context/LanguageContext";
 
 const contactData = [
   {
@@ -30,8 +33,44 @@ const contactData = [
     href: "",
   },
 ];
+
+
 function Contact() {
   const { t } = useTranslation();
+  const { language } = useLanguage();
+  const formRef = useRef(null);
+  const [showModal, setShowModal] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    emailjs
+      .sendForm(
+        "ekspress_contact",
+        "template_bhn7ydn",
+        formRef.current,
+        "XzkuS0Go_OO3rQsRn"
+      )
+      .then(
+        (result) => {
+          setIsLoading(false);
+          setShowModal(true);
+          formRef.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          setIsLoading(false);
+        }
+      );
+  };
+  const closeModal = () => {
+    setShowModal(false);
+  };
+  useEffect(() => {
+    formRef.current =
+      formRef.current || document.getElementById("contactFormId");
+  }, []);
   return (
     <div id="contact" className="bg-[#111c55] ">
       <div className="myContainer pt-[80px] pb-[100px] tabletLg:flex tabletLg:flex-col tabletLg:items-center tabletLg:pt-[40px]">
@@ -46,7 +85,11 @@ function Contact() {
               </h1>
             </Slide>
             <Slide direction="left" duration={2000}>
-              <p className="w-full max-w-[353px] text-white font-medium font-krub leading-[24px] text-[16px] mb-[32px] tabletLg:text-center tabletLg:w-[400px] mobileMd:text-[13px] mobileMd:w-[350px] mobileMd:leading-normal mobileSm:text-[11px] mobileSm:max-w-[300px]">
+              <p
+                className={`w-full max-w-[353px] text-white font-medium ${
+                  language === "ru" ? "font-rubik font-regular" : "font-krub"
+                } leading-[24px] text-[16px] mb-[32px] tabletLg:text-center tabletLg:w-[400px] mobileMd:text-[13px] mobileMd:w-[350px] mobileMd:leading-normal mobileSm:text-[11px] mobileSm:max-w-[300px]`}
+              >
                 {t("contact_desc")}
               </p>
             </Slide>
@@ -66,18 +109,26 @@ function Contact() {
             </div>
           </div>
           <Fade duration={3000}>
-            <form className="flex flex-col pt-4 gap-y-[3px] desktopLg:mr-12  tabletLg:flex-col tabletLg:items-center desktopSm:mr-0">
+            <form
+              className="flex flex-col pt-4 gap-y-[3px] desktopLg:mr-12  tabletLg:flex-col tabletLg:items-center desktopSm:mr-0"
+              ref={formRef}
+              onSubmit={sendEmail}
+              id="contactFormId"
+            >
               <div className="flex items-center mb-6 gap-4 desktopLg:flex-col ">
                 <Input
                   type="text"
                   placeholder={t("your_name")}
                   required={true}
+                  premium
+                  name="user_name"
                 />{" "}
                 <br className="desktopLg:hidden" />
                 <Input
                   type="tel"
                   placeholder={t("phone_number")}
                   required={true}
+                  name="user_number"
                 />{" "}
                 <br className="desktopLg:hidden" />
               </div>
@@ -86,16 +137,22 @@ function Contact() {
                 className="outline-none bg-transparent text-[#fff] font-rubik font-regular w-full max-w-[758px] placeholder:pl-3 placeholder:text-[#fff] px-3 border-[2px] border-[#4E5683] mobileLg:w-[350px]:w-[300px] mobileMd:h-[100px] mobileSm:max-w-[250px]"
                 cols="30"
                 rows="5"
+                name="message"
                 placeholder={t("your_message")}
               ></textarea>
               <span className="mt-auto tabletLg:flex tabletLg:flex-col tabletLg:items-center">
-                <Button title="submit_message" path={"/"} />
+                <Button type="submit" title="submit_message" path={"/"} />
               </span>
             </form>
           </Fade>
         </div>
-        
-      </div>
+      </div>{" "}
+      {isLoading && (
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-50">
+          <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-primaryClr"></div>
+        </div>
+      )}
+      <Modal showModal={showModal} onClose={closeModal} text="contact_form" />
     </div>
   );
 }

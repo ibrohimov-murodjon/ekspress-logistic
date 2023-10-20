@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
+import { useLanguage } from "../context/LanguageContext";
 
 const langs = [
   {
@@ -177,18 +178,17 @@ const langs = [
 ];
 
 const Language = () => {
-  const { i18n } = useTranslation();
+  const { language, changeLanguage } = useLanguage();
 
   const handleLanguageChange = (e) => {
     const newLang = e.target.value;
-    i18n.changeLanguage(newLang);
-    localStorage.setItem("i18nextLng", newLang);
+    changeLanguage(newLang);
   };
 
   return (
     <select
       className="styled-select bg-transparent border-none text-white"
-      value={i18n.language}
+      value={language}
       onChange={handleLanguageChange}
     >
       {langs.map((lan) => (
@@ -201,90 +201,3 @@ const Language = () => {
 };
 
 export default Language;
-
-// function Language() {
-//   const [detectLang, setDetectLang] = useState("English (US)");
-//   // const [detectImg, setDetectImg] = useState(langs[0].img);
-
-//   const handleLanguage = (e, code) => {
-//     setDetectLang(e.target.innerText);
-//     i18n.changeLanguage(code);
-//     localStorage.setItem("i18nextLng", code);
-//   };
-
-//   return (
-//     <Slide direction="right" duration={2500}>
-//       <div className="flex items-center pt-1 md:order-2  mobileLg:pt-0">
-//         <button
-//           type="button"
-//           data-dropdown-toggle="language-dropdown-menu"
-//           className="inline-flex  text-white items-center font-krub font-medium justify-center pl-2 text-base rounded-lg cursor-pointer"
-//         >
-//           <svg
-//             className="w-7 h-7 mr-2 rounded-full"
-//             aria-hidden="true"
-//             xmlns="http://www.w3.org/2000/svg"
-//             xmlnsXlink="http://www.w3.org/1999/xlink"
-//             viewBox="0 0 3900 3900"
-//           >
-//             <path fill="#b22234" d="M0 0h7410v3900H0z" />
-//             <path
-//               d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0"
-//               stroke="#fff"
-//               strokeWidth="300"
-//             />
-//             <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
-//             <g fill="#fff">
-//               <g id="d">
-//                 <g id="c">
-//                   <g id="e">
-//                     <g id="b">
-//                       <path
-//                         id="a"
-//                         d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"
-//                       />
-//                       <use xlinkHref="#a" y="420" />
-//                       <use xlinkHref="#a" y="840" />
-//                       <use xlinkHref="#a" y="1260" />
-//                     </g>
-//                     <use xlinkHref="#a" y="1680" />
-//                   </g>
-//                   <use xlinkHref="#b" x="247" y="210" />
-//                 </g>
-//                 <use xlinkHref="#c" x="494" />
-//               </g>
-//               <use xlinkHref="#d" x="988" />
-//               <use xlinkHref="#c" x="1976" />
-//               <use xlinkHref="#e" x="2470" />
-//             </g>
-//           </svg>
-//           {detectLang}
-//         </button>
-//         <div
-//           className="z-[999] hidden my-4 text-base list-none bg-gradient-to-r from-[#522db8] to-[#111C55] divide-y divide-gray-100 rounded-lg shadow"
-//           id="language-dropdown-menu"
-//         >
-//           <ul className="py-2 font-medium" role="none">
-//             {langs.map((lan, index) => (
-//               <li key={index}>
-//                 <a
-//                   href="#"
-//                   className="block px-4 py-2 text-sm text-white"
-//                   role="menuitem"
-//                   onClick={(e) => handleLanguage(e, lan.code)}
-//                 >
-//                   <div className="inline-flex items-center">
-//                     {lan.img}
-//                     {lan.name}
-//                   </div>
-//                 </a>
-//               </li>
-//             ))}
-//           </ul>
-//         </div>
-//       </div>
-//     </Slide>
-//   );
-// }
-
-// export default Language;

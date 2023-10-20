@@ -14,7 +14,7 @@
   "advantages": "Afzalliklarimiz",
   "our_team": "Bizning Jamoa",
   "contact": "Aloqa",
-  "about_us": "Trans Ekpress Logistic xalqaro logistika kompaniyasi bo‘lib, shtab-kvartirasi O‘zbekistonning Namangan shahrida joylashgan. Kompaniya o'z faoliyatini atigi 5 yil oldin boshlaganiga qaramay, 20 dan ortiq mamlakatlarda o'zining sodiq mijozlariga ega bo'lishga muvaffaq bo'ldi. Biz hozirda barcha Yevropa va Osiyo mamlakatlariga har qanday vaziyatda tez va sifatli xizmat ko'rsatmoqdamiz. Ammo bu bizning chegaramiz emas. Sizning joylashuvingiz kompaniyamiz uchun muhim emas. Biz sizning mollaringizni istalgan vaqtda istalgan joyga yetkazib berishimiz mumkin. Sizning ishonchingiz bizning eng kuchli qurolimizdir. Bunga erishish uchun biz eng yaxshi haydovchilarimiz va mutaxassislarimiz doimo aloqada bo'lishini ta'minlaymiz va sizga eng yaxshi va eng maqbul narxlarni taklif qilamiz.",
+  "about_us": "Trans Ekpress Logistic - xalqaro logistika kompaniyasi bo‘lib, shtab-kvartirasi O‘zbekistonning Namangan shahrida joylashgan. Kompaniya o'z faoliyatini atigi 5 yil oldin boshlaganiga qaramay, 20 dan ortiq mamlakatlarda o'zining sodiq mijozlariga ega bo'lishga muvaffaq bo'ldi. Biz hozirda barcha Yevropa va Osiyo mamlakatlariga har qanday vaziyatda tez va sifatli xizmat ko'rsatmoqdamiz. Ammo bu bizning chegaramiz emas. Sizning joylashuvingiz kompaniyamiz uchun muhim emas. Biz sizning mollaringizni istalgan vaqtda istalgan joyga yetkazib berishimiz mumkin. Sizning ishonchingiz bizning eng kuchli qurolimizdir. Bunga erishish uchun biz eng yaxshi haydovchilarimiz va mutaxassislarimiz doimo aloqada bo'lishini ta'minlaymiz va sizga eng yaxshi va eng maqbul narxlarni taklif qilamiz.",
   "director_name": "Rasul Saloyev",
   "director": "Direktor",
   "advantages_text": "Bizning Afzalliklarimiz",
@@ -63,5 +63,8 @@
   "extra_advices": "Qo'shimcha maslahatlar",
   "individual_attention": "Individual yondashuv",
   "cheapest_prices": "Eng arzon narxlar",
-  "created_by": "Dasturchi: Murad"
+  "created_by": "Dasturchi: Murad",
+  "contact_form": "Javobingiz uchun rahmat! Tez orada siz bilan bog'lanamiz...",
+  "premium_form": "Tabriklaymiz, endi siz bizning Premium Klass mijozimizsiz.",
+  "thanks_text": "Katta rahmat !"
 }

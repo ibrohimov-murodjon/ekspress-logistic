@@ -5,9 +5,11 @@ import { SubText, Card } from "../components";
 //images
 import Director from "../assets/director-photo.png";
 import { useTranslation } from "react-i18next";
+import { useLanguage } from "../context/LanguageContext";
 
 function About() {
   const { t } = useTranslation();
+  const { language } = useLanguage();
   return (
     <div
       id="about"
@@ -32,7 +34,11 @@ function About() {
         </Slide>
         <div className="w-[1px] h-[414px] bg-[#D6D6D6] ml-[30px] desktopSm:hidden"></div>
         <Zoom top cascade>
-          <p className="max-w-[631px] pl-[13px] text-white font-krub text-xl font-medium leading-8 desktop:text-base desktop:max-w-[531px] desktopSm:text-center desktopSm:max-w-[100%] desktopSm:pt-8 desktopSm:text-[18px] maxSm:text-[15px]">
+          <p
+            className={`max-w-[631px] pl-[13px] text-white ${
+              language === "ru" ? "font-rubik font-regular" : "font-krub"
+            } text-xl font-medium leading-8 desktop:text-base desktop:max-w-[531px] desktopSm:text-center desktopSm:max-w-[100%] desktopSm:pt-8 desktopSm:text-[18px] maxSm:text-[15px]`}
+          >
             {t("about_us")}
           </p>
         </Zoom>
