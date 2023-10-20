@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Slide, Fade } from "react-awesome-reveal";
 import { SubText, Button } from "../components";
 import video from "../assets/bg-video.mp4";
-import { bgHero } from "../assets";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -17,13 +16,11 @@ function Hero() {
   return (
     <div className="relative flex flex-col justify-center h-[840px] overflow-hidden mt-[-70px] tabletLgMd:mt-[-100px]">
       <div className="absolute w-full h-[840px] z-[10] bg-bgVideo"></div>
-      <img
-        src={bgHero}
-        alt="Background Image"
-        className={`absolute z-0 w-auto min-w-full min-h-full max-w-none ${
+      <div
+        className={`bgHero absolute z-0 w-auto min-w-full min-h-full max-w-none ${
           videoLoaded ? "opacity-0" : "opacity-100"
         }`}
-      />
+      ></div>
       <video
         src={video}
         autoPlay={true}

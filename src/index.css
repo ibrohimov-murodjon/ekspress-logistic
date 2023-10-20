@@ -137,7 +137,12 @@ body {
   z-index: 998;
   -webkit-backface-visibility: hidden;
 }
-
+.bgHero {
+  background-image: url("./assets/bg-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .premiumBac {
   background: linear-gradient(
       90deg,
