@@ -10,7 +10,7 @@ function Location() {
   const Locations = {
     tashkent: (
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.0375146329075!2d71.77075367521432!3d40.385861157518754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb8369d93de0a7%3A0xa25aa363371a2aec!2sUzum%20Market!5e0!3m2!1sen!2s!4v1696437118519!5m2!1sen!2s"
+        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6001.123222981831!2d69.331237!3d41.231323!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDEzJzUyLjgiTiA2OcKwMTknNTIuNSJF!5e0!3m2!1sen!2s!4v1697884259149!5m2!1sen!2s"
         width="100%"
         height="450"
         style={{ border: 0 }}

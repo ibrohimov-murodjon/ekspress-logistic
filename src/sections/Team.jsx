@@ -23,7 +23,7 @@ const data = [
     name: "team_person_two_name",
     role: "team_person_two_role",
     tglink: "https://t.me/ekspress_logistics",
-    number: "+998911234567",
+    number: "+998950778808",
     bgDark: true,
   },
   {
@@ -31,7 +31,7 @@ const data = [
     name: "team_person_third_name",
     role: "team_person_third_role",
     tglink: "https://t.me/ekspress_logistics",
-    number: "+998911234567",
+    number: "+998770378808",
     bgDark: true,
   },
 ];
