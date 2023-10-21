@@ -23,9 +23,9 @@ const countriesData = [
 function Gallery() {
   const { t } = useTranslation();
   return (
-    <div className="bg-[#091242] h-[80vh]  relative desktopSm:h-[100vh]">
-      <div className="myContainer flex justify-between w-full desktopSm:flex-col  ">
-        <div className="pt-8  max-w-[460px]">
+    <div className="bg-[#091242]  h-[80vh]  relative desktopSm:h-[800px] maxSm:h-[700px] ">
+      <div className="myContainer flex items-center justify-between  w-full desktopSm:flex-col   desktopSm:gap-y-8 mobileLg:h-[900px] mobileLg:gap-y-8">
+        <div className="pt-8   max-w-[460px]  desktopSm:flex desktopSm:items-center desktopSm:justify-center desktopSm:flex-col ">
           <SubText title="gallery" bgclr="#F3F3F3" />
           <h1 className=" text-4xl text-white font-rubik font-bold maxSm:text-3xl">
             {t("our_gallery")}
@@ -37,39 +37,34 @@ function Gallery() {
             nemo earum esse similique.
           </p>
         </div>
-        <div className="  flex h-[100%]  w-full">
-          <div className="rotate-90 w-full max-w-fit"></div>
-          <div className="rotate-90 w-full max-w-fit">
+        <div className="  flex h-[100%] items-center  w-full desktopSm:justify-center ">
+          <div className="rotate-90 w-full max-w-fit desktopSm:flex">
             <marquee
-              className="h-[80vh]"
+              className="h-[80vh] desktopSm:flex desktopSm:items-center desktopSm:justify-center "
               behavior="scroll"
               direction="right"
               scrollamount="5"
             >
               {countriesData.map((item) => (
-                <>
                   <img
                     src={item.img}
-                    className="w-[400px] h-[350px] rotate-[-90deg]  inline-block desktopMd:w-[300px] desktopMd:h-[250px] "
+                    className="w-[400px] h-[350px] rotate-[-90deg]  inline-block desktopMd:w-[300px] desktopMd:h-[250px] mobileMax:w-[250px] mobileMax:h-[200px] mobileLg:w-[500px] mobileLg:h-[300px]"
                   />
-                </>
               ))}
             </marquee>
           </div>
-          <div className="rotate-90 w-full max-w-fit">
+          <div className="rotate-90 w-full max-w-fit mobileLg:hidden">
             <marquee
-              className="h-[80vh]"
+              className="h-[80vh] desktopSm:flex desktopSm:items-center desktopSm:justify-center"
               behavior="scroll"
               direction="left"
               scrollamount="5"
             >
               {countriesData.map((item) => (
-                <>
                   <img
                     src={item.img}
-                    className="w-[400px] h-[350px] object-cover rotate-[-90deg]   inline-block desktopMd:w-[300px] desktopMd:h-[250px]  "
+                    className="w-[400px] h-[350px] object-cover rotate-[-90deg]   inline-block desktopMd:w-[300px] desktopMd:h-[250px] mobileMax:w-[250px] mobileMax:h-[200px]"
                   />
-                </>
               ))}
             </marquee>
           </div>
