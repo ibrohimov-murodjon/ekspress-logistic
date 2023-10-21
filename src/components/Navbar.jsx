@@ -35,7 +35,7 @@ function Navbar() {
   const { t } = useTranslation();
   const { language } = useLanguage();
   return (
-    <nav className="navbar sticky-header bg-white bg-opacity-30 backdrop-filter backdrop-blur-md pt-3 tabletLgMd:pt-0">
+    <nav className="navbar relative sticky-header bg-white bg-opacity-30 backdrop-filter backdrop-blur-md pt-3 tabletLgMd:pt-0">
       <div className="myContainer">
         <div className="flex items-center justify-between pt-[18px] pb-[18px] flex-wrap tabletLgMd:justify-center tabletLgMd:pt-[25px] mobileLg:flex-col maxSm:justify-center mobileLg:pt-[16px]">
           <Slide direction="down" duration={2500} className="maxSm:hidden">
@@ -73,14 +73,19 @@ function Navbar() {
                 <a href="https://t.me/ekspress_logistics" target={"_blank"}>
                   <img src={tgLogo} alt="telegram logo" className="w-[32px]" />
                 </a>
-
-                <a href="tel:+998770016060" target={"_blank"}>
-                  <img
-                    src={callLogoWhite}
-                    alt="telegram logo"
-                    className="w-[32px]"
-                  />
-                </a>
+                <div className="dropdown">
+                  <span>
+                    <img
+                      src={callLogoWhite}
+                      alt="telegram logo"
+                      className="w-[32px]"
+                    />
+                  </span>
+                  <div className="dropdown-content">
+                    <a href="tel:+998910500144">+998910500144</a> <br />
+                    <a href="tel:+998903515042">+998903515042</a>
+                  </div>
+                </div>
                 <a href="mailto:t.eks.logistic@gmail.com" target={"_blank"}>
                   <img
                     src={emailLogoNavbar}

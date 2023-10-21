@@ -25,7 +25,7 @@ function Premium() {
               </Link>
             </li>
             <li>
-              <h3 className="text-white">{t("premium")}</h3>
+              <h3 className="text-[#ffd200]">{t("premium")}</h3>
             </li>
           </ul>
 

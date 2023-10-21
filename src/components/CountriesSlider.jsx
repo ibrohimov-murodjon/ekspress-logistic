@@ -17,6 +17,7 @@ import {
   SpainFlag,
   ThailandFlag,
   TurkeyFlag,
+  UzbekistanFlag,
   VietnamFlag,
 } from "../assets";
 //components
@@ -38,7 +39,7 @@ const countriesData = [
   { id: 11, name: "Portugal", img: PortugalFlag },
   { id: 12, name: "Thailand", img: ThailandFlag },
   { id: 13, name: "Vietnam", img: VietnamFlag },
-  { id: 14, name: "George", img: GeorgeFlag },
+  { id: 14, name: "Uzbekistan", img: UzbekistanFlag },
   { id: 15, name: "Kazakhstan", img: KazakhstanFlag },
   { id: 16, name: "Belarus", img: BelarusFlag },
   { id: 17, name: "Latvia", img: LatviaFlag },
