@@ -112,7 +112,7 @@ function Advantages() {
                 },
                 mobile: {
                   breakpoint: {
-                    max: 700,
+                    max: 767,
                     min: 0,
                   },
                   items: 1,
@@ -131,7 +131,7 @@ function Advantages() {
               {data.map((item, index) => (
                 <Card
                   key={index}
-                  className="max-w-sm mr-2 border-amber-300 bg-[#091242] h-[300px] mt-[65px] mb-8 hover:shadow-md hover:shadow-amber-300 tabletLg:max-w-xs tabletMd:max-w-lg"
+                  className="max-w-sm mr-2 border-amber-300 bg-[#091242] h-[320px] mt-[65px] mb-8 hover:shadow-md hover:shadow-amber-300 tabletMd:max-w-lg maxSm:h-[350px] "
                 >
                   <div className="flex text-xl gap-6 items-center  text-white">
                     <span className="font-rubik">0{item.id}</span>

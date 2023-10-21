@@ -25,7 +25,6 @@ const clientsGet = [
   },
 ];
 
-
 const PremiumContact = () => {
   const { t } = useTranslation();
   const { language } = useLanguage();
@@ -38,10 +37,10 @@ const PremiumContact = () => {
     setIsLoading(true);
     emailjs
       .sendForm(
-        "service_bz7sfl5",
-        "template_eww9utn",
+        "service_f98roy7",
+        "template_7icvzrl",
         formRef.current,
-        "XzkuS0Go_OO3rQsRn"
+        "0aaFqzrOHCL9Zcaao"
       )
       .then(
         (result) => {

@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 //component
 import { SubText } from "../components";
 //images
-import {Certificated,  Director, emailLogoWhite} from '../assets/index'
+import { Certificated, Certificate2, Certificate3 } from "../assets/index";
 
 //file-dataBase
 const certificatedData = [
@@ -20,17 +20,13 @@ const certificatedData = [
   },
   {
     id: 2,
-    img: Director,
+    img: Certificate2,
   },
   {
     id: 3,
-    img: emailLogoWhite,
-  },
-  {
-    id: 4,
-    img: Certificated,
+    img: Certificate3,
   }
-]
+];
 function Certificates() {
   const { t } = useTranslation();
   //carousel

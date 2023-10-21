@@ -34,7 +34,6 @@ const contactData = [
   },
 ];
 
-
 function Contact() {
   const { t } = useTranslation();
   const { language } = useLanguage();
@@ -47,10 +46,10 @@ function Contact() {
     setIsLoading(true);
     emailjs
       .sendForm(
-        "ekspress_contact",
-        "template_bhn7ydn",
+        "service_lsmsnzq",
+        "template_az1fgs4",
         formRef.current,
-        "XzkuS0Go_OO3rQsRn"
+        "HtJlRzJfGh6v7qbry"
       )
       .then(
         (result) => {
