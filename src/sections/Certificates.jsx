@@ -1,6 +1,5 @@
-
 //react
-import { useState } from 'react';
+import { useState } from "react";
 //component
 // carusel
 import Carousel from "react-multi-carousel";
@@ -25,7 +24,7 @@ const certificatedData = [
   {
     id: 3,
     img: Certificate3,
-  }
+  },
 ];
 function Certificates() {
   const { t } = useTranslation();
@@ -33,20 +32,20 @@ function Certificates() {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 5,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 746 },
-      items: 2
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 746, min: 0 },
-      items: 1
-    }
+      items: 1,
+    },
   };
   return (
     <div className="  w-full h-fit pt-[40px] bg-[#091242] pb-[120px]">
@@ -90,13 +89,13 @@ function Certificates() {
           {certificatedData.map((item) => {
             return (
               <div
-                className="bg-slate-200 h-[441px]  w-full max-w-[337px] "
+                className="bg-slate-200 h-[441px] w-full max-w-[337px] "
                 key={item.id}
               >
                 <img
                   src={item.img}
                   alt="certificated img"
-                  className="transition-opacity w-full "
+                  className="transition-opacity w-full object-cover"
                 />
               </div>
             );
@@ -107,4 +106,4 @@ function Certificates() {
   );
 }
 
-export default Certificates
+export default Certificates;

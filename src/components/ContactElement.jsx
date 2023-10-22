@@ -22,7 +22,7 @@ const ContactElement = ({ img, title, text, href }) => {
         </h4>
         {href ? (
           <a
-            href={`${href}:${text}`}
+            href={`${href}:${t(text)}`}
             className={`text-[14px] ${
               language === "ru" ? "font-rubik font-regular" : "font-krub"
             } leading-[18.9px] font-medium text-white hover:underline hover:underline-offset-4`}

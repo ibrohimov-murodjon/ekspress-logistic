@@ -21,7 +21,7 @@ function Location() {
     ),
     namangan: (
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.941837624795!2d71.78528987521445!3d40.38798165738985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb83a471c6b55b%3A0x9927f2609db0d333!2sNajot%20Ta&#39;lim%20Farg&#39;ona!5e0!3m2!1sen!2s!4v1696436152648!5m2!1sen!2s"
+        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6011.509129936739!2d71.243971!3d41.118051!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDA3JzA1LjAiTiA3McKwMTQnMzguMyJF!5e0!3m2!1sen!2s!4v1697903166239!5m2!1sen!2s"
         width="100%"
         height="450"
         style={{ border: 0 }}
