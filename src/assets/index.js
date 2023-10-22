@@ -44,3 +44,4 @@ export { default as PortugalFlag } from "./PorttugalFlag.svg";
 export { default as ThailandFlag } from "./ThailandFlag.svg";
 export { default as VietnamFlag } from "./VietnamFlag.svg";
 export { default as UzbekistanFlag } from "./UzbekistanFlag.svg";
+export { default as RussiaFlag } from "./russia.svg";
