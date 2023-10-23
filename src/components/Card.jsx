@@ -35,15 +35,22 @@ function Card({ img, name, role, bgDark, tglink, number, borderNone }) {
           {t(role)}
         </p>
       </div>
-       <div className={` ${number ? 'w-[104px]' : 'w-[64px]' } flex items-center justify-center gap-[25px] bg-gradient-to-r  from-[#f7971e] to-[#ffd200]  h-[61px] absolute bottom-16 right-0`}>
+      <div
+        className={` ${
+          number ? "w-[104px]" : "w-[64px]"
+        } flex items-center justify-center gap-[25px] bg-gradient-to-r  from-[#f7971e] to-[#ffd200]  h-[61px] absolute bottom-16 right-0`}
+      >
         <a href={`${tglink}`} target={"_blank"}>
           <img src={tgLogo} alt="telegram logo" />
         </a>
-        {number ? <a href={`tel:${number}`}>
-          <img src={phoneLogo} alt="phone logo" />
-        </a>:'' }
-       
-      </div> 
+        {number ? (
+          <a href={`tel:${number}`}>
+            <img src={phoneLogo} alt="phone logo" />
+          </a>
+        ) : (
+          ""
+        )}
+      </div>
     </div>
   );
 }

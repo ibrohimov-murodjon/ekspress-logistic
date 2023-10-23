@@ -5,8 +5,9 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 function Location() {
-  const [location, setLocation] = useState("tashkent");
   const { t } = useTranslation();
+  const [location, setLocation] = useState("tashkent");
+
   const Locations = {
     tashkent: (
       <iframe

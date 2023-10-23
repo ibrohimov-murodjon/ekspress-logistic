@@ -37,7 +37,6 @@ function Premium() {
       <div className="bg-[#111C55]">
         <PremiumContact />
       </div>
-      {/* <DropTopBtn /> */}
     </>
   );
 }

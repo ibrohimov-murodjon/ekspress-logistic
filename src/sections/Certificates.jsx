@@ -63,12 +63,12 @@ function Certificates() {
           autoPlay
           autoPlaySpeed={2000}
           centerMode={false}
-          containerClass="container-with-dots"
-          dotListClass=""
+          containerclassName="container-with-dots"
+          dotListclassName=""
           draggable
           focusOnSelect={false}
           infinite
-          itemClass=""
+          itemclassName=""
           keyBoardControl
           minimumTouchDrag={80}
           pauseOnHover
@@ -80,7 +80,7 @@ function Certificates() {
           rtl={false}
           shouldResetAutoplay
           showDots={false}
-          sliderClass=""
+          sliderclassName=""
           slidesToSlide={1}
           swipeable
           responsive={responsive}

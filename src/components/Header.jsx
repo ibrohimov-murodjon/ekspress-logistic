@@ -1,12 +1,11 @@
 //react
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 //react-router-dom
 import { Link } from "react-router-dom";
 //react-revral for animtion
 import { Slide } from "react-awesome-reveal";
 //images
 import {
-  logo,
   callLogo,
   emailLogo,
   timeLogo,
@@ -74,15 +73,62 @@ function Header() {
     setToggle(false);
   };
 
+  const burgerMenuRef = useRef(null);
+
+  useEffect(() => {
+    const closeMenuOnScroll = () => {
+      if (toggle) {
+        setToggle(false);
+      }
+    };
+
+    const closeMenuOnTouch = (e) => {
+      if (
+        toggle &&
+        burgerMenuRef.current &&
+        !burgerMenuRef.current.contains(e.target)
+      ) {
+        setToggle(false);
+      }
+    };
+
+    const closeMenuOnClickOutside = (e) => {
+      if (
+        toggle &&
+        burgerMenuRef.current &&
+        !burgerMenuRef.current.contains(e.target)
+      ) {
+        setToggle(false);
+      }
+    };
+
+    if (toggle) {
+      document.addEventListener("scroll", closeMenuOnScroll);
+      document.addEventListener("touchstart", closeMenuOnTouch);
+      document.addEventListener("click", closeMenuOnClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", closeMenuOnScroll);
+      document.removeEventListener("touchstart", closeMenuOnTouch);
+      document.removeEventListener("click", closeMenuOnClickOutside);
+    };
+  }, [toggle]);
+
+  const handleBurgerClick = (e) => {
+    e.stopPropagation(); // Prevent the click event from propagating to the document
+    setToggle(!toggle);
+  };
+
   return (
     <div className="header__container bg-[#091242] maxSm:shadow-2xl z-[999] w-full pt-11 pb-7 max-desktop:pt-6 maxSm:pt-2 maxSm:pb-0">
-      <div className="myContainer  flex justify-between flex-wrap items-center desktopMin:justify-center maxSm:h-[100px]">
+      <div className="myContainer  flex justify-between flex-wrap items-center desktopMid:justify-center maxSm:h-[100px]">
         <Slide direction="left" duration={3000}>
           <Link to="/" className="pr-4">
             <img
               src={newLogo}
               alt="logo"
-              className="w-[80px] inline-block maxSm:flex"
+              className="w-[100px] inline-block maxSm:flex"
             />
           </Link>
         </Slide>
@@ -107,12 +153,13 @@ function Header() {
             src={toggle ? close : burger}
             alt="menu"
             className="w-[28px] h-[28px] object-contain"
-            onClick={() => setToggle(!toggle)}
+            onClick={handleBurgerClick}
           />
           <div
             className={`${
               !toggle ? "hidden" : "flex"
             } p-6 bg-gradient-to-r from-[#522db8] to-[#111C55] absolute top-24 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+            ref={burgerMenuRef}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col">
               {navLinks.map((nav, index) => (
