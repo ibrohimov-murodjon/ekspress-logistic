@@ -26,6 +26,7 @@ export default function App() {
           errorElement: <Error />,
         },
       ],
+      errorElement: <Error />,
     },
   ]);
   return (

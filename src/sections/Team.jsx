@@ -1,6 +1,6 @@
 //react-reveal for animtion
 import { Slide, Fade } from "react-awesome-reveal";
-import {useTranslation} from 'react-i18next'
+import { useTranslation } from "react-i18next";
 //components
 import { Card, SubText } from "../components";
 //images
@@ -37,7 +37,7 @@ const data = [
 ];
 
 function Team() {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <div
       id="team"

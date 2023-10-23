@@ -7,6 +7,7 @@ import {
 } from "../assets";
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "../context/LanguageContext";
+import DropTopBtn from "./DropTopBtn";
 
 const navLinks = [
   {
@@ -31,7 +32,7 @@ function Footer() {
   const { t } = useTranslation();
   const { language } = useLanguage();
   return (
-    <footer className="pt-[170px] bg-[#091242] tabletLgMax:pt-[140px] desktopSm:pt-[0]">
+    <footer className="pt-[170px] relative bg-[#091242] tabletLgMax:pt-[140px] desktopSm:pt-[0] ">
       <section className="myContainer relative flex justify-center flex-col py-[23px]">
         <img
           className="w-[150px] mx-auto absolute left-[545px] bottom-[50px] tabletLgMax:left-[445px] desktopSm:relative desktopSm:left-0 desktopSm:bottom-0 mobileLg:w-[120px]"
@@ -42,20 +43,19 @@ function Footer() {
           <div className="flex items-center mobileLg:justify-center">
             <div className="space-x-4 items-center desktopSm:space-x-10 mobileLg:space-x-3 mobileLg:flex mobileLg:flex-wrap mobileLg:justify-center">
               {navLinks.map((link, index) => (
-                <>
-                  <a
-                    href={`#${link.to}`}
-                    className={`footer__link relative text-white ${
-                      language === "ru" ? "font-rubik font-regular" : "font-krub"
-                    } font-bold mobileLg:mb-2`}
-                  >
-                    {t(link.name)}
-                  </a>
-                </>
+                <a
+                  key={index}
+                  href={`#${link.to}`}
+                  className={`footer__link relative text-white ${
+                    language === "ru" ? "font-rubik font-regular" : "font-krub"
+                  } font-bold mobileLg:mb-2`}
+                >
+                  {t(link.name)}
+                </a>
               ))}
             </div>
             <a
-              href="https://t.me/NTFGroups"
+              href="https://t.me/heismurad"
               className={`absolute left-[335px] bottom-[23px] text-white underline underline-offset-4 opacity-[0.8] ${
                 language === "ru" ? "font-rubik font-regular" : "font-krub"
               } font-regular ml-[220px] hover:opacity-[1] tabletLgMax:left-[235px] desktopSm:hidden`}
@@ -101,6 +101,7 @@ function Footer() {
         </div>
         {/* <div className="w-full h-[2px] bg-[#D6D6D6]"></div> */}
       </section>
+      <DropTopBtn />
     </footer>
   );
 }

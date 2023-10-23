@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 //images
 import { callLogoWhite, emailLogoWhite, timeLogoWhite } from "../assets";
-import CloseBtn from "../assets/close-icon.svg";
+import CloseBtn from "../assets/close.svg";
 import { Button } from "../components";
 import { useLanguage } from "../context/LanguageContext";
 
@@ -70,16 +70,16 @@ const Modal = ({ showModal, onClose, text }) => {
     >
       <div onClick={onClose} className="overlay">
         <div
-          className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full max-w-[800px] h-[484px] bg-[#111c55] rounded-md desktopMid:max-w-[700px] desktopMid:h-[400px] maxSm:max-w-[500px] mobileLg:max-w-[400px] mobileMd:max-w-[300px]"
+          className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full max-w-[800px] h-[484px] bg-[#111c55] rounded-md desktopMid:max-w-[700px] desktopMid:h-auto desktopMid:p-4 maxSm:max-w-[500px] mobileLg:max-w-[400px] mobileMd:max-w-[300px]"
           onClick={(e) => handleClick(e)}
         >
-          <div onClick={onClose} className="absolute right-2 top-1">
+          <div onClick={onClose} className="absolute  p-4 right-2 top-1">
             <img
               src={CloseBtn}
-              className="w-[40px] h-[40px] desktopMid:h-[30px] desktopMid:w-[30px] mobileLg:w-[20px] mobileLg:h-[20px]"
+              className="w-[24px] h-[24px] cursor-pointer mobileLg:w-[20px] mobileLg:h-[20px]"
             />
           </div>
-          <div className="flex items-center justify-center  flex-col pt-14 desktopMid:pt-4">
+          <div className="flex items-center justify-center  flex-col pt-14 desktopMid:pt-4 maxSm:pt-6">
             <h1 className="w-full max-w-[512px] text-white font-rubik text-[35px] font-normal leading-normal text-center desktopMid:text-[20px] desktopMid:max-w-[400px] mobileLg:max-w-[300px] mobileLg:text-[16px]">
               {t(text)}
             </h1>

@@ -4,10 +4,16 @@ import { Slide, Fade } from "react-awesome-reveal";
 //images
 import { emailLogoWhite, callLogoWhite, timeLogoWhite } from "../assets/index";
 //components
-import { Button, ContactElement, Input, SubText } from "../components";
+import {
+  Button,
+  ContactElement,
+  Input,
+  SubText,
+  Loading,
+  Modal,
+} from "../components";
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
-import Modal from "../components/Modal";
 import { useLanguage } from "../context/LanguageContext";
 
 const contactData = [
@@ -146,11 +152,7 @@ function Contact() {
           </Fade>
         </div>
       </div>{" "}
-      {isLoading && (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-50">
-          <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-primaryClr"></div>
-        </div>
-      )}
+      {isLoading && <Loading />}
       <Modal showModal={showModal} onClose={closeModal} text="contact_form" />
     </div>
   );

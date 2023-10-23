@@ -79,13 +79,13 @@ function Advantages() {
               autoPlaySpeed={3000}
               centerMode={false}
               className=""
-              containerClass="container-padding-bottom"
+              containerclassName="container-padding-bottom"
               customButtonGroup={<ButtonGroup />}
-              dotListClass=""
+              dotListclassName=""
               draggable
               focusOnSelect={false}
               infinite={true}
-              itemClass=""
+              itemclassName=""
               keyBoardControl
               minimumTouchDrag={80}
               pauseOnHover
@@ -124,7 +124,7 @@ function Advantages() {
               rtl={false}
               shouldResetAutoplay
               showDots={false}
-              sliderClass=""
+              sliderclassName=""
               slidesToSlide={1}
               swipeable
             >

@@ -97,10 +97,12 @@ const PremiumContact = () => {
           />{" "}
           <br />
           <Input
-            type="text"
-            placeholder={t("surname")}
+            type="number"
+            placeholder={t("trucks_need")}
             premium
-            name="user_surname"
+            required={true}
+            name="trucks_need"
+            min="1"
           />{" "}
           <br />
           <Input
@@ -124,6 +126,7 @@ const PremiumContact = () => {
             placeholder={t("company_name")}
             premium
             name="user_company"
+            required={true}
           />{" "}
           <br />
           <Input
@@ -135,7 +138,7 @@ const PremiumContact = () => {
           />{" "}
           <br />
         </div>
-        <div className="w-full max-w-[778px]">
+        <div className="w-full max-w-[778px] flex justify-center items-center">
           <textarea
             id="input-warning"
             className="outline-none mt-8 bg-transparent text-[#fff] font-rubik font-regular w-full placeholder:pl-3 placeholder:text-[#fff] px-3 border-[2px] border-[#4E5683] tabletLg:mt-2 mobileLg:w-[350px] mobileMd:h-[100px] mobileSm:max-w-[250px] mobileMd:max-w-[300px]"

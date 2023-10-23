@@ -10,7 +10,6 @@ import {
   GreeceFlag,
   ItalyFlag,
   KazakhstanFlag,
-  KyrgyzstanFlag,
   LatviaFlag,
   PartnersTextImg,
   PortugalFlag,
@@ -70,25 +69,24 @@ const CountriesSlider = () => {
         </a>
       </Zoom>
       <div className="flex items-center w-full absolute bottom-0 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md backdrop-opacity-10 text-white font-bold font-rubik  text-[40px] maxSm:text-[30px]">
-        <div class="marquee">
-          <div class="marquee__group ">
+        <div className="marquee">
+          <div className="marquee__group ">
             {countriesData.map((item) => (
-              <>
+              <div key={item.id}>
                 <img
-                  key={item.id}
                   src={item.img}
                   className="w-20 h-20 inline-block mr-5 object-cover maxSm:mr-0"
                 />
                 <span className="w-fit mr-[120px] maxSm:mr-[80px]">
                   {item.name}
                 </span>
-              </>
+              </div>
             ))}
           </div>
 
-          <div aria-hidden="true" class="marquee__group">
+          <div aria-hidden="true" className="marquee__group">
             {countriesData.map((item) => (
-              <>
+              <div key={item.id}>
                 <img
                   key={item.id}
                   src={item.img}
@@ -97,7 +95,7 @@ const CountriesSlider = () => {
                 <span className="w-fit mr-[120px] maxSm:mr-[80px]">
                   {item.name}
                 </span>
-              </>
+              </div>
             ))}
           </div>
         </div>

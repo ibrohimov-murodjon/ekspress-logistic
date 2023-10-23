@@ -14,7 +14,7 @@ function Hero() {
   };
 
   return (
-    <div className="relative flex flex-col justify-center h-[840px] overflow-hidden mt-[-70px] tabletLgMd:mt-[-100px]">
+    <div className="relative flex flex-col justify-center h-[840px] overflow-hidden mt-[-70px] desktopMid:mt-[-100px]">
       <div className="absolute w-full h-[840px] z-[10] bg-bgVideo"></div>
       <div
         className={`bgHero absolute z-0 w-auto min-w-full min-h-full max-w-none ${
@@ -43,7 +43,7 @@ function Hero() {
         </Slide>
         <Fade duration={3500}>
           <Link to="premium">
-            <Button title="premium_class" path={"/premium"} />
+            <Button title="premium_className" path={"/premium"} />
           </Link>
         </Fade>
       </div>

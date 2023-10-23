@@ -28,7 +28,6 @@ const ContactElement = ({ img, title, text, href }) => {
             } leading-[18.9px] font-medium text-white hover:underline hover:underline-offset-4`}
           >
             {t(text)}
-
           </a>
         ) : (
           <p
