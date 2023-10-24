@@ -6,12 +6,12 @@ import { useTranslation } from "react-i18next";
 
 function Location() {
   const { t } = useTranslation();
-  const [location, setLocation] = useState("tashkent");
+  const [location, setLocation] = useState("namangan");
 
   const Locations = {
-    tashkent: (
+    namangan: (
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6001.123222981831!2d69.331237!3d41.231323!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDEzJzUyLjgiTiA2OcKwMTknNTIuNSJF!5e0!3m2!1sen!2s!4v1697884259149!5m2!1sen!2s"
+        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6011.509129936739!2d71.243971!3d41.118051!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDA3JzA1LjAiTiA3McKwMTQnMzguMyJF!5e0!3m2!1sen!2s!4v1697903166239!5m2!1sen!2s"
         width="100%"
         height="450"
         style={{ border: 0 }}
@@ -20,9 +20,9 @@ function Location() {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     ),
-    namangan: (
+    tashkent: (
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6011.509129936739!2d71.243971!3d41.118051!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDA3JzA1LjAiTiA3McKwMTQnMzguMyJF!5e0!3m2!1sen!2s!4v1697903166239!5m2!1sen!2s"
+        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6001.123222981831!2d69.331237!3d41.231323!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDEzJzUyLjgiTiA2OcKwMTknNTIuNSJF!5e0!3m2!1sen!2s!4v1697884259149!5m2!1sen!2s"
         width="100%"
         height="450"
         style={{ border: 0 }}

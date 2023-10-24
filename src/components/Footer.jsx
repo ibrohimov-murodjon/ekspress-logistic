@@ -45,7 +45,7 @@ function Footer() {
               {navLinks.map((link, index) => (
                 <a
                   key={index}
-                  href={`#${link.to}`}
+                  href={`/#${link.to}`}
                   className={`footer__link relative text-white ${
                     language === "ru" ? "font-rubik font-regular" : "font-krub"
                   } font-bold mobileLg:mb-2`}
@@ -99,7 +99,6 @@ function Footer() {
             {t("created_by")}
           </a>
         </div>
-        {/* <div className="w-full h-[2px] bg-[#D6D6D6]"></div> */}
       </section>
       <DropTopBtn />
     </footer>

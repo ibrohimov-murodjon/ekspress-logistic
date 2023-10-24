@@ -49,7 +49,6 @@ function Certificates() {
   };
   return (
     <div className="  w-full h-fit pt-[40px] bg-[#091242] pb-[120px]">
-      {/* <div className="absolute w-full h-[560px] z-[10] bg-bgVideo"></div> */}
       <div className="myContainer">
         <Slide direction="left" duration={1500}>
           <SubText bgclr="#F3F3F3" title="certificates" />
