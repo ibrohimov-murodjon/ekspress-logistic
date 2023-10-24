@@ -153,7 +153,12 @@ function Contact() {
         </div>
       </div>{" "}
       {isLoading && <Loading />}
-      <Modal showModal={showModal} onClose={closeModal} text="contact_form" />
+      <Modal
+        showModal={showModal}
+        onClose={closeModal}
+        text="contact_form"
+        btnText="close_text"
+      />
     </div>
   );
 }

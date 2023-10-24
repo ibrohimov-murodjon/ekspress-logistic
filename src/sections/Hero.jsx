@@ -43,7 +43,7 @@ function Hero() {
         </Slide>
         <Fade duration={3500}>
           <Link to="premium">
-            <Button title="premium_className" path={"/premium"} />
+            <Button title="premium_class" path={"/premium"} />
           </Link>
         </Fade>
       </div>

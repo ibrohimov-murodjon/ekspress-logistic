@@ -8,34 +8,35 @@ import CloseBtn from "../assets/close.svg";
 import { Button } from "../components";
 import { useLanguage } from "../context/LanguageContext";
 
-//fileDataBase
-const premiumData = [
-  {
-    id: 1,
-    img: emailLogoWhite,
-    title: "email_text",
-    text: "email",
-    href: "mailto",
-  },
-  {
-    id: 2,
-    img: callLogoWhite,
-    title: "call_us",
-    text: "phone",
-    href: "tel",
-  },
-  {
-    id: 3,
-    img: timeLogoWhite,
-    title: "opening_day",
-    text: "closing_day",
-  },
-];
-
-const Modal = ({ showModal, onClose, text }) => {
+const Modal = ({ showModal, onClose, text, btnText }) => {
   const modalRef = useRef();
   const { t } = useTranslation();
   const { language } = useLanguage();
+
+  //fileDataBase
+  const premiumData = [
+    {
+      id: 1,
+      img: emailLogoWhite,
+      title: "email_text",
+      text: `${t("email")}`,
+      href: "mailto",
+    },
+    {
+      id: 2,
+      img: callLogoWhite,
+      title: "call_us",
+      text: `${t("phone")}`,
+      href: "tel",
+    },
+    {
+      id: 3,
+      img: timeLogoWhite,
+      title: "opening_day",
+      text: "closing_day",
+    },
+  ];
+
   const handleCloseModal = (e) => {
     if (modalRef.current === e.target) {
       onClose();
@@ -70,7 +71,7 @@ const Modal = ({ showModal, onClose, text }) => {
     >
       <div onClick={onClose} className="overlay">
         <div
-          className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full max-w-[800px] h-[484px] bg-[#111c55] rounded-md desktopMid:max-w-[700px] desktopMid:h-auto desktopMid:p-4 maxSm:max-w-[500px] mobileLg:max-w-[400px] mobileMd:max-w-[300px]"
+          className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full max-w-[800px] h-[500px] bg-[#111c55] rounded-md desktopMid:max-w-[700px] desktopMid:h-auto desktopMid:p-4 maxSm:max-w-[500px] mobileLg:max-w-[400px] mobileMd:max-w-[300px]"
           onClick={(e) => handleClick(e)}
         >
           <div onClick={onClose} className="absolute  p-4 right-2 top-1">
@@ -80,16 +81,9 @@ const Modal = ({ showModal, onClose, text }) => {
             />
           </div>
           <div className="flex items-center justify-center  flex-col pt-14 desktopMid:pt-4 maxSm:pt-6">
-            <h1 className="w-full max-w-[512px] text-white font-rubik text-[35px] font-normal leading-normal text-center desktopMid:text-[20px] desktopMid:max-w-[400px] mobileLg:max-w-[300px] mobileLg:text-[16px]">
+            <h1 className="w-full max-w-[620px] text-white font-rubik text-[35px] font-normal leading-normal text-center desktopMid:text-[20px] desktopMid:max-w-[400px] mobileLg:max-w-[300px] mobileLg:text-[16px]">
               {t(text)}
             </h1>
-            <p
-              className={`mt-4 w-full max-w-[512px] text-white ${
-                language === "ru" ? "font-rubik" : "font-krub"
-              } font-semibold leading-[24px] text-center desktopMid:mt-2 desktopMid:max-w-[400px] desktopMid:text-[13px] mobileLg:max-w-[300px] mobileLg:text-[10px] mobileLg:mt-0`}
-            >
-              {t("thanks_text")}
-            </p>
           </div>
           <ul className="flex items-center flex-wrap justify-center gap-x-[131px] mt-[20px] mb-5 desktopMid:mb-3 mobileLg:gap-y-[20px] mobileLg:gap-x-0 mobileMd:gap-y-[10px] mobileMd:mt-2">
             {premiumData.map((element) => {
@@ -135,7 +129,7 @@ const Modal = ({ showModal, onClose, text }) => {
           </ul>
           <div className="flex items-center justify-center">
             <Link to="/">
-              <Button title="home" />
+              <Button onClose={onClose} title={btnText} />
             </Link>
           </div>
         </div>

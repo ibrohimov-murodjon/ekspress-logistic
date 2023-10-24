@@ -29,7 +29,7 @@ const PremiumContact = () => {
   const { t } = useTranslation();
   const { language } = useLanguage();
   const formRef = useRef(null);
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
 
   const sendEmail = (e) => {
@@ -117,7 +117,6 @@ const PremiumContact = () => {
             type="email"
             placeholder={t("email_text")}
             premium
-            required={true}
             name="user_email"
           />{" "}
           <br />
@@ -155,7 +154,12 @@ const PremiumContact = () => {
           <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-primaryClr"></div>
         </div>
       )}
-      <Modal showModal={showModal} onClose={closeModal} text="premium_form" />
+      <Modal
+        showModal={showModal}
+        onClose={closeModal}
+        text="premium_form"
+        btnText="back_home"
+      />
     </div>
   );
 };
