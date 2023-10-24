@@ -1,6 +1,3 @@
-//react
-import { useState } from "react";
-//component
 // carusel
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";

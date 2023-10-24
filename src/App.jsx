@@ -8,6 +8,7 @@ import { Home, Premium, Error } from "./pages";
 import { ErrorElement } from "./components";
 import { LanguageProvider } from "./context/LanguageContext";
 
+
 export default function App() {
   const routes = createBrowserRouter([
     {
@@ -17,7 +18,6 @@ export default function App() {
         {
           index: true,
           element: <Home />,
-          // loader: landingLoader,
           errorElement: <ErrorElement />,
         },
         {

@@ -7,7 +7,6 @@ import { SubText, PremiumContact } from "../components";
 //images
 import HomeIcon from "../assets/home-icon.svg";
 import RightIcon from "../assets/right-icon.svg";
-import DropTopBtn from "../components/DropTopBtn";
 
 function Premium() {
   const { t } = useTranslation();

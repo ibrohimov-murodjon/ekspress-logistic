@@ -29,7 +29,7 @@ const PremiumContact = () => {
   const { t } = useTranslation();
   const { language } = useLanguage();
   const formRef = useRef(null);
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   const sendEmail = (e) => {
