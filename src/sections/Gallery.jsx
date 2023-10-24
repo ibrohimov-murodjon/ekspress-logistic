@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 //images
 import {
   galery1,
@@ -11,10 +12,8 @@ import {
   galery9,
   galery10,
 } from "../assets";
-import { SubText } from "../components";
-import { useTranslation } from "react-i18next";
-import { useState, useEffect } from "react";
 //components
+import { SubText } from "../components";
 
 //file-dataBase
 const countriesData = [

@@ -4,7 +4,6 @@ import { Button } from "../components";
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "../context/LanguageContext";
 import {
-  newLogo,
   instaLogo,
   tgLogo,
   callLogoWhite,

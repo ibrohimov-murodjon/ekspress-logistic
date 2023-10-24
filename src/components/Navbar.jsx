@@ -5,7 +5,6 @@ import { instaLogo, tgLogo, callLogoWhite, emailLogoNavbar } from "../assets";
 import { Language } from "./";
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "../context/LanguageContext";
-import { Link } from "react-router-dom";
 
 const navLinks = [
   {

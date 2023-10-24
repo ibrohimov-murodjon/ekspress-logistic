@@ -139,17 +139,3 @@ const Modal = ({ showModal, onClose, text, btnText }) => {
 };
 
 export default Modal;
-
-// {
-//   premiumData.map((item) => {
-//     return (
-//       <ContactElement
-//         img={item.img}
-//         title={item.title}
-//         text={item.text}
-//         href={item.href}
-//         key={item.id}
-//       />
-//     );
-//   });
-// }
