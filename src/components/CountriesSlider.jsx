@@ -14,10 +14,9 @@ import {
   PartnersTextImg,
   PortugalFlag,
   SpainFlag,
-  ThailandFlag,
   TurkeyFlag,
   UzbekistanFlag,
-  VietnamFlag,
+  EuropeanUnion,
   RussiaFlag,
 } from "../assets";
 //components
@@ -26,21 +25,20 @@ import SubText from "./SubText";
 
 //file-dataBase
 const countriesData = [
-  { id: 1, name: "Russia", img: RussiaFlag },
-  { id: 2, name: "Kazakhstan", img: KazakhstanFlag },
-  { id: 3, name: "Uzbekistan", img: UzbekistanFlag },
-  { id: 4, name: "George", img: GeorgeFlag },
-  { id: 5, name: "Belarus", img: BelarusFlag },
-  { id: 6, name: "Latvia", img: LatviaFlag },
-  { id: 7, name: "Turkey", img: TurkeyFlag },
-  { id: 8, name: "Spain", img: SpainFlag },
-  { id: 9, name: "France", img: FranceFlag },
-  { id: 10, name: "Greece", img: GreeceFlag },
-  { id: 11, name: "Portugal", img: PortugalFlag },
-  { id: 12, name: "Thailand", img: ThailandFlag },
-  { id: 13, name: "Vietnam", img: VietnamFlag },
-  { id: 14, name: "Germany", img: GermayFlag },
-  { id: 15, name: "Italy", img: ItalyFlag },
+  { id: 1, name: "russia", img: RussiaFlag },
+  { id: 2, name: "kazakhstan", img: KazakhstanFlag },
+  { id: 3, name: "uzbekistan", img: UzbekistanFlag },
+  { id: 4, name: "george", img: GeorgeFlag },
+  { id: 5, name: "belarus", img: BelarusFlag },
+  { id: 6, name: "latvia", img: LatviaFlag },
+  { id: 7, name: "turkey", img: TurkeyFlag },
+  { id: 8, name: "spain", img: SpainFlag },
+  { id: 9, name: "france", img: FranceFlag },
+  { id: 10, name: "greece", img: GreeceFlag },
+  { id: 11, name: "portugal", img: PortugalFlag },
+  { id: 12, name: "europeanUnion", img: EuropeanUnion },
+  { id: 13, name: "germany", img: GermayFlag },
+  { id: 14, name: "italy", img: ItalyFlag },
 ];
 
 const CountriesSlider = () => {
@@ -78,7 +76,7 @@ const CountriesSlider = () => {
                   className="w-20 h-20 inline-block mr-5 object-cover maxSm:mr-0"
                 />
                 <span className="w-fit mr-[120px] maxSm:mr-[80px]">
-                  {item.name}
+                  {t(item.name)}
                 </span>
               </div>
             ))}
