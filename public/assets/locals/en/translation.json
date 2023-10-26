@@ -71,5 +71,19 @@
   "back_home": "Go Back To Home",
   "soon_launch": "We will launch our website soon",
   "current_working": "We are currently working hard on this page. Subscribe to our social media accounts to receive updates on when it will be available",
-  "close_text": "Close"
+  "close_text": "Close",
+  "russia":"Russia",
+  "kazakhstan":"Kazakhstan",
+  "uzbekistan":"Uzbekistan",
+  "george":"George",
+  "belarus":"Belarus",
+  "latvia":"Latvia",
+  "turkey":"Turkey",
+  "spain":"Spain",
+  "france":"France",
+  "greece":"Greece",
+  "portugal":"Portugal",
+  "europeanUnion":"European Union",
+  "germany":"Germany",
+  "italy":"Italy"
 }

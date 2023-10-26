@@ -6,7 +6,13 @@ import { useTranslation } from "react-i18next";
 //component
 import { SubText } from "../components";
 //images
-import { Certificated, Certificate2, Certificate3 } from "../assets/index";
+import {
+  Certificated,
+  Certificate2,
+  Certificate3,
+  Certificate4,
+  Certificate5,
+} from "../assets/index";
 
 //file-dataBase
 const certificatedData = [
@@ -21,6 +27,14 @@ const certificatedData = [
   {
     id: 3,
     img: Certificate3,
+  },
+  {
+    id: 4,
+    img: Certificate4,
+  },
+  {
+    id: 5,
+    img: Certificate5,
   },
 ];
 function Certificates() {

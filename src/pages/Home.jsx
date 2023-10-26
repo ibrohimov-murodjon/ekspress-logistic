@@ -1,6 +1,6 @@
-//components
-import { CountriesSlider } from "../components";
-//sections
+import React from "react";
+
+// Import your sections and components
 import {
   Hero,
   About,
@@ -11,6 +11,7 @@ import {
   Contact,
   Gallery,
 } from "../sections";
+import { CountriesSlider } from "../components";
 
 function Home() {
   return (
@@ -21,7 +22,7 @@ function Home() {
       <Certificates />
       <CountriesSlider />
       <Team />
-      <Gallery/>
+      <Gallery />
       <Contact />
       <Location />
     </div>
