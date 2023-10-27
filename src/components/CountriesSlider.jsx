@@ -91,7 +91,7 @@ const CountriesSlider = () => {
                   className="w-20 h-20 inline-block object-cover mr-5 maxSm:mr-0"
                 />
                 <span className="w-fit mr-[120px] maxSm:mr-[80px]">
-                  {item.name}
+                  {t(item.name)}
                 </span>
               </div>
             ))}
