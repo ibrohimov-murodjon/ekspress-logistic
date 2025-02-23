@@ -55,7 +55,7 @@ function Footer() {
               ))}
             </div>
             <a
-              href="https://t.me/NTFGroups"
+              href="https://t.me/heismurad"
               className={`absolute left-[335px] bottom-[23px] text-white underline underline-offset-4 opacity-[0.8] ${
                 language === "ru" ? "font-rubik font-regular" : "font-krub"
               } font-regular ml-[220px] hover:opacity-[1] tabletLgMax:left-[235px] desktopSm:hidden`}
@@ -71,10 +71,10 @@ function Footer() {
             >
               <img src={instaLogo} alt="instagram logo" className="w-[28px]" />
             </a>
-            <a href="https://t.me/ekspress_logistics" target={"_blank"}>
+            <a href="https://t.me/RSalayev" target={"_blank"}>
               <img src={tgLogo} alt="telegram logo" className="w-[32px]" />
             </a>
-            <a href="tel:+998770016060" target={"_blank"}>
+            <a href="tel:+998505250095" target={"_blank"}>
               <img
                 src={callLogoWhite}
                 alt="telegram logo"
@@ -90,7 +90,7 @@ function Footer() {
             </a>
           </div>
           <a
-            href="https://t.me/NTFGroups"
+            href="https://t.me/heismurad"
             className={`hidden text-white underline underline-offset-4 opacity-[0.8] ${
               language === "ru" ? "font-rubik font-regular" : "font-krub"
             } font-regular hover:opacity-[1] desktopSm:flex desktopSm:mt-4`}

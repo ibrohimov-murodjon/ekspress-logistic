@@ -66,7 +66,7 @@ function Navbar() {
                     className="w-[28px]"
                   />
                 </a>
-                <a href="https://t.me/ekspress_logistics" target={"_blank"}>
+                <a href="https://t.me/RSalayev" target={"_blank"}>
                   <img src={tgLogo} alt="telegram logo" className="w-[32px]" />
                 </a>
                 <div className="dropdown">
@@ -81,16 +81,16 @@ function Navbar() {
                     <div className="triangle-up"></div>
                     <div className="drop-cont-elements">
                       <a
-                        href="tel:+998910500144"
+                        href="tel:+998505250095"
                         className="text-center hover:underline hover:underline-offset-4"
                       >
-                        +998910500144
+                        +998505250095
                       </a>
                       <a
-                        href="tel:+998903515042"
+                        href="tel:+998902180095"
                         className="text-center inline-block mt-2 hover:underline hover:underline-offset-4"
                       >
-                        +998903515042
+                        +998902180095
                       </a>
                     </div>
                   </div>

@@ -28,7 +28,7 @@ const contactData = [
     id: 2,
     img: callLogoWhite,
     title: "call_us",
-    text: "+998950778808",
+    text: "+998505250095",
     href: "tel",
   },
   {
